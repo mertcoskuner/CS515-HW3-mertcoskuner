@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+
+# PyTorch checkpoints
+*.pth
+*.pt
+
+# Results & logs
+
+
+# Dataset
+data/
+
+# Plots
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+*.egg
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

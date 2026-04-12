@@ -1,0 +1,1899 @@
+======================================
+Job ID  : 1124370
+Host    : cn07
+GPU     : NVIDIA RTX A5000
+Date    : Sat Mar 21 14:16:18 +03 2026
+======================================
+[SimpleCNN] Using device: cuda
+
+[SimpleCNN] Epoch 1/50
+  [100/391] loss: 2.4986  acc: 0.2102
+  [200/391] loss: 2.1436  acc: 0.2816
+  [300/391] loss: 1.9641  acc: 0.3288
+  Train loss: 1.8585  acc: 0.3556
+  Val   loss: 1.4683  acc: 0.4713
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.4713)
+
+[SimpleCNN] Epoch 2/50
+  [100/391] loss: 1.4515  acc: 0.4756
+  [200/391] loss: 1.4245  acc: 0.4862
+  [300/391] loss: 1.3994  acc: 0.4956
+  Train loss: 1.3796  acc: 0.5047
+  Val   loss: 1.2168  acc: 0.5671
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.5671)
+
+[SimpleCNN] Epoch 3/50
+  [100/391] loss: 1.2729  acc: 0.5495
+  [200/391] loss: 1.2648  acc: 0.5520
+  [300/391] loss: 1.2492  acc: 0.5570
+  Train loss: 1.2299  acc: 0.5652
+  Val   loss: 1.0943  acc: 0.6126
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.6126)
+
+[SimpleCNN] Epoch 4/50
+  [100/391] loss: 1.1303  acc: 0.6038
+  [200/391] loss: 1.1403  acc: 0.5962
+  [300/391] loss: 1.1352  acc: 0.5993
+  Train loss: 1.1328  acc: 0.6005
+  Val   loss: 1.0085  acc: 0.6451
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.6451)
+
+[SimpleCNN] Epoch 5/50
+  [100/391] loss: 1.0866  acc: 0.6153
+  [200/391] loss: 1.0824  acc: 0.6168
+  [300/391] loss: 1.0756  acc: 0.6207
+  Train loss: 1.0780  acc: 0.6204
+  Val   loss: 1.0100  acc: 0.6437
+
+[SimpleCNN] Epoch 6/50
+  [100/391] loss: 1.0181  acc: 0.6492
+  [200/391] loss: 1.0100  acc: 0.6495
+  [300/391] loss: 1.0024  acc: 0.6514
+  Train loss: 1.0008  acc: 0.6511
+  Val   loss: 0.9275  acc: 0.6738
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.6738)
+
+[SimpleCNN] Epoch 7/50
+  [100/391] loss: 0.9885  acc: 0.6552
+  [200/391] loss: 0.9827  acc: 0.6555
+  [300/391] loss: 0.9780  acc: 0.6584
+  Train loss: 0.9779  acc: 0.6588
+  Val   loss: 0.9121  acc: 0.6801
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.6801)
+
+[SimpleCNN] Epoch 8/50
+  [100/391] loss: 0.9549  acc: 0.6693
+  [200/391] loss: 0.9618  acc: 0.6639
+  [300/391] loss: 0.9556  acc: 0.6655
+  Train loss: 0.9551  acc: 0.6667
+  Val   loss: 0.8687  acc: 0.6979
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.6979)
+
+[SimpleCNN] Epoch 9/50
+  [100/391] loss: 0.9466  acc: 0.6748
+  [200/391] loss: 0.9345  acc: 0.6742
+  [300/391] loss: 0.9347  acc: 0.6724
+  Train loss: 0.9332  acc: 0.6735
+  Val   loss: 0.8663  acc: 0.6982
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.6982)
+
+[SimpleCNN] Epoch 10/50
+  [100/391] loss: 0.9200  acc: 0.6801
+  [200/391] loss: 0.9185  acc: 0.6782
+  [300/391] loss: 0.9208  acc: 0.6792
+  Train loss: 0.9207  acc: 0.6791
+  Val   loss: 0.8653  acc: 0.6936
+
+[SimpleCNN] Epoch 11/50
+  [100/391] loss: 0.8807  acc: 0.6963
+  [200/391] loss: 0.8842  acc: 0.6933
+  [300/391] loss: 0.8866  acc: 0.6926
+  Train loss: 0.8850  acc: 0.6924
+  Val   loss: 0.8224  acc: 0.7180
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7180)
+
+[SimpleCNN] Epoch 12/50
+  [100/391] loss: 0.8524  acc: 0.7035
+  [200/391] loss: 0.8643  acc: 0.6993
+  [300/391] loss: 0.8671  acc: 0.7010
+  Train loss: 0.8688  acc: 0.6982
+  Val   loss: 0.8261  acc: 0.7126
+
+[SimpleCNN] Epoch 13/50
+  [100/391] loss: 0.8737  acc: 0.6991
+  [200/391] loss: 0.8742  acc: 0.6989
+  [300/391] loss: 0.8690  acc: 0.6992
+  Train loss: 0.8673  acc: 0.6999
+  Val   loss: 0.8127  acc: 0.7149
+
+[SimpleCNN] Epoch 14/50
+  [100/391] loss: 0.8524  acc: 0.7054
+  [200/391] loss: 0.8540  acc: 0.7042
+  [300/391] loss: 0.8533  acc: 0.7041
+  Train loss: 0.8515  acc: 0.7046
+  Val   loss: 0.8125  acc: 0.7155
+
+[SimpleCNN] Epoch 15/50
+  [100/391] loss: 0.8575  acc: 0.6937
+  [200/391] loss: 0.8543  acc: 0.6986
+  [300/391] loss: 0.8492  acc: 0.7007
+  Train loss: 0.8466  acc: 0.7026
+  Val   loss: 0.7942  acc: 0.7224
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7224)
+
+[SimpleCNN] Epoch 16/50
+  [100/391] loss: 0.8299  acc: 0.7137
+  [200/391] loss: 0.8266  acc: 0.7136
+  [300/391] loss: 0.8225  acc: 0.7161
+  Train loss: 0.8218  acc: 0.7156
+  Val   loss: 0.7973  acc: 0.7207
+
+[SimpleCNN] Epoch 17/50
+  [100/391] loss: 0.8262  acc: 0.7148
+  [200/391] loss: 0.8288  acc: 0.7111
+  [300/391] loss: 0.8263  acc: 0.7109
+  Train loss: 0.8215  acc: 0.7126
+  Val   loss: 0.7791  acc: 0.7308
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7308)
+
+[SimpleCNN] Epoch 18/50
+  [100/391] loss: 0.8115  acc: 0.7164
+  [200/391] loss: 0.8207  acc: 0.7149
+  [300/391] loss: 0.8174  acc: 0.7152
+  Train loss: 0.8183  acc: 0.7145
+  Val   loss: 0.7712  acc: 0.7358
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7358)
+
+[SimpleCNN] Epoch 19/50
+  [100/391] loss: 0.8017  acc: 0.7192
+  [200/391] loss: 0.8130  acc: 0.7157
+  [300/391] loss: 0.8115  acc: 0.7161
+  Train loss: 0.8105  acc: 0.7169
+  Val   loss: 0.7779  acc: 0.7307
+
+[SimpleCNN] Epoch 20/50
+  [100/391] loss: 0.8019  acc: 0.7216
+  [200/391] loss: 0.8031  acc: 0.7214
+  [300/391] loss: 0.8062  acc: 0.7191
+  Train loss: 0.8087  acc: 0.7188
+  Val   loss: 0.7718  acc: 0.7322
+
+[SimpleCNN] Epoch 21/50
+  [100/391] loss: 0.7849  acc: 0.7264
+  [200/391] loss: 0.7931  acc: 0.7236
+  [300/391] loss: 0.7943  acc: 0.7234
+  Train loss: 0.7951  acc: 0.7235
+  Val   loss: 0.7627  acc: 0.7345
+
+[SimpleCNN] Epoch 22/50
+  [100/391] loss: 0.7948  acc: 0.7270
+  [200/391] loss: 0.7860  acc: 0.7285
+  [300/391] loss: 0.7927  acc: 0.7257
+  Train loss: 0.7949  acc: 0.7245
+  Val   loss: 0.7670  acc: 0.7347
+
+[SimpleCNN] Epoch 23/50
+  [100/391] loss: 0.7929  acc: 0.7251
+  [200/391] loss: 0.7966  acc: 0.7228
+  [300/391] loss: 0.7956  acc: 0.7241
+  Train loss: 0.7939  acc: 0.7245
+  Val   loss: 0.7613  acc: 0.7379
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7379)
+
+[SimpleCNN] Epoch 24/50
+  [100/391] loss: 0.7989  acc: 0.7247
+  [200/391] loss: 0.7879  acc: 0.7255
+  [300/391] loss: 0.7881  acc: 0.7266
+  Train loss: 0.7908  acc: 0.7255
+  Val   loss: 0.7630  acc: 0.7333
+
+[SimpleCNN] Epoch 25/50
+  [100/391] loss: 0.7937  acc: 0.7245
+  [200/391] loss: 0.7910  acc: 0.7265
+  [300/391] loss: 0.7891  acc: 0.7266
+  Train loss: 0.7867  acc: 0.7275
+  Val   loss: 0.7591  acc: 0.7369
+
+[SimpleCNN] Epoch 26/50
+  [100/391] loss: 0.7826  acc: 0.7316
+  [200/391] loss: 0.7805  acc: 0.7305
+  [300/391] loss: 0.7824  acc: 0.7294
+  Train loss: 0.7813  acc: 0.7301
+  Val   loss: 0.7549  acc: 0.7391
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7391)
+
+[SimpleCNN] Epoch 27/50
+  [100/391] loss: 0.7728  acc: 0.7347
+  [200/391] loss: 0.7834  acc: 0.7274
+  [300/391] loss: 0.7868  acc: 0.7254
+  Train loss: 0.7816  acc: 0.7278
+  Val   loss: 0.7575  acc: 0.7394
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7394)
+
+[SimpleCNN] Epoch 28/50
+  [100/391] loss: 0.7816  acc: 0.7262
+  [200/391] loss: 0.7749  acc: 0.7329
+  [300/391] loss: 0.7812  acc: 0.7301
+  Train loss: 0.7804  acc: 0.7298
+  Val   loss: 0.7554  acc: 0.7393
+
+[SimpleCNN] Epoch 29/50
+  [100/391] loss: 0.7969  acc: 0.7241
+  [200/391] loss: 0.7823  acc: 0.7303
+  [300/391] loss: 0.7817  acc: 0.7289
+  Train loss: 0.7842  acc: 0.7285
+  Val   loss: 0.7514  acc: 0.7420
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7420)
+
+[SimpleCNN] Epoch 30/50
+  [100/391] loss: 0.7787  acc: 0.7301
+  [200/391] loss: 0.7778  acc: 0.7305
+  [300/391] loss: 0.7800  acc: 0.7298
+  Train loss: 0.7783  acc: 0.7307
+  Val   loss: 0.7512  acc: 0.7412
+
+[SimpleCNN] Epoch 31/50
+  [100/391] loss: 0.7666  acc: 0.7330
+  [200/391] loss: 0.7706  acc: 0.7321
+  [300/391] loss: 0.7772  acc: 0.7298
+  Train loss: 0.7761  acc: 0.7305
+  Val   loss: 0.7507  acc: 0.7412
+
+[SimpleCNN] Epoch 32/50
+  [100/391] loss: 0.7757  acc: 0.7357
+  [200/391] loss: 0.7755  acc: 0.7351
+  [300/391] loss: 0.7759  acc: 0.7337
+  Train loss: 0.7749  acc: 0.7327
+  Val   loss: 0.7503  acc: 0.7420
+
+[SimpleCNN] Epoch 33/50
+  [100/391] loss: 0.7637  acc: 0.7349
+  [200/391] loss: 0.7699  acc: 0.7332
+  [300/391] loss: 0.7708  acc: 0.7321
+  Train loss: 0.7722  acc: 0.7324
+  Val   loss: 0.7517  acc: 0.7401
+
+[SimpleCNN] Epoch 34/50
+  [100/391] loss: 0.7717  acc: 0.7339
+  [200/391] loss: 0.7727  acc: 0.7341
+  [300/391] loss: 0.7754  acc: 0.7330
+  Train loss: 0.7775  acc: 0.7323
+  Val   loss: 0.7524  acc: 0.7409
+
+[SimpleCNN] Epoch 35/50
+  [100/391] loss: 0.7661  acc: 0.7388
+  [200/391] loss: 0.7661  acc: 0.7361
+  [300/391] loss: 0.7699  acc: 0.7336
+  Train loss: 0.7702  acc: 0.7342
+  Val   loss: 0.7501  acc: 0.7400
+
+[SimpleCNN] Epoch 36/50
+  [100/391] loss: 0.7762  acc: 0.7336
+  [200/391] loss: 0.7743  acc: 0.7329
+  [300/391] loss: 0.7730  acc: 0.7339
+  Train loss: 0.7723  acc: 0.7338
+  Val   loss: 0.7484  acc: 0.7427
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7427)
+
+[SimpleCNN] Epoch 37/50
+  [100/391] loss: 0.7884  acc: 0.7233
+  [200/391] loss: 0.7828  acc: 0.7282
+  [300/391] loss: 0.7755  acc: 0.7312
+  Train loss: 0.7724  acc: 0.7321
+  Val   loss: 0.7478  acc: 0.7426
+
+[SimpleCNN] Epoch 38/50
+  [100/391] loss: 0.7663  acc: 0.7378
+  [200/391] loss: 0.7772  acc: 0.7334
+  [300/391] loss: 0.7731  acc: 0.7355
+  Train loss: 0.7718  acc: 0.7364
+  Val   loss: 0.7494  acc: 0.7415
+
+[SimpleCNN] Epoch 39/50
+  [100/391] loss: 0.7755  acc: 0.7312
+  [200/391] loss: 0.7728  acc: 0.7330
+  [300/391] loss: 0.7720  acc: 0.7327
+  Train loss: 0.7704  acc: 0.7319
+  Val   loss: 0.7483  acc: 0.7422
+
+[SimpleCNN] Epoch 40/50
+  [100/391] loss: 0.7690  acc: 0.7326
+  [200/391] loss: 0.7691  acc: 0.7327
+  [300/391] loss: 0.7675  acc: 0.7348
+  Train loss: 0.7721  acc: 0.7324
+  Val   loss: 0.7485  acc: 0.7411
+
+[SimpleCNN] Epoch 41/50
+  [100/391] loss: 0.7649  acc: 0.7328
+  [200/391] loss: 0.7757  acc: 0.7308
+  [300/391] loss: 0.7702  acc: 0.7349
+  Train loss: 0.7717  acc: 0.7340
+  Val   loss: 0.7475  acc: 0.7423
+
+[SimpleCNN] Epoch 42/50
+  [100/391] loss: 0.7705  acc: 0.7277
+  [200/391] loss: 0.7716  acc: 0.7327
+  [300/391] loss: 0.7704  acc: 0.7324
+  Train loss: 0.7708  acc: 0.7327
+  Val   loss: 0.7477  acc: 0.7415
+
+[SimpleCNN] Epoch 43/50
+  [100/391] loss: 0.7643  acc: 0.7368
+  [200/391] loss: 0.7694  acc: 0.7342
+  [300/391] loss: 0.7680  acc: 0.7347
+  Train loss: 0.7686  acc: 0.7342
+  Val   loss: 0.7477  acc: 0.7431
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7431)
+
+[SimpleCNN] Epoch 44/50
+  [100/391] loss: 0.7660  acc: 0.7341
+  [200/391] loss: 0.7686  acc: 0.7315
+  [300/391] loss: 0.7702  acc: 0.7318
+  Train loss: 0.7661  acc: 0.7338
+  Val   loss: 0.7472  acc: 0.7419
+
+[SimpleCNN] Epoch 45/50
+  [100/391] loss: 0.7630  acc: 0.7364
+  [200/391] loss: 0.7617  acc: 0.7376
+  [300/391] loss: 0.7657  acc: 0.7355
+  Train loss: 0.7681  acc: 0.7346
+  Val   loss: 0.7475  acc: 0.7421
+
+[SimpleCNN] Epoch 46/50
+  [100/391] loss: 0.7701  acc: 0.7346
+  [200/391] loss: 0.7757  acc: 0.7310
+  [300/391] loss: 0.7744  acc: 0.7323
+  Train loss: 0.7695  acc: 0.7349
+  Val   loss: 0.7471  acc: 0.7428
+
+[SimpleCNN] Epoch 47/50
+  [100/391] loss: 0.7571  acc: 0.7395
+  [200/391] loss: 0.7655  acc: 0.7341
+  [300/391] loss: 0.7715  acc: 0.7328
+  Train loss: 0.7672  acc: 0.7340
+  Val   loss: 0.7469  acc: 0.7425
+
+[SimpleCNN] Epoch 48/50
+  [100/391] loss: 0.7659  acc: 0.7390
+  [200/391] loss: 0.7655  acc: 0.7369
+  [300/391] loss: 0.7708  acc: 0.7344
+  Train loss: 0.7667  acc: 0.7355
+  Val   loss: 0.7465  acc: 0.7430
+
+[SimpleCNN] Epoch 49/50
+  [100/391] loss: 0.7667  acc: 0.7280
+  [200/391] loss: 0.7737  acc: 0.7290
+  [300/391] loss: 0.7738  acc: 0.7304
+  Train loss: 0.7730  acc: 0.7320
+  Val   loss: 0.7472  acc: 0.7428
+
+[SimpleCNN] Epoch 50/50
+  [100/391] loss: 0.7735  acc: 0.7324
+  [200/391] loss: 0.7816  acc: 0.7305
+  [300/391] loss: 0.7754  acc: 0.7318
+  Train loss: 0.7691  acc: 0.7343
+  Val   loss: 0.7467  acc: 0.7432
+  Saved best model → results/partb/best_model_simplecnn.pth  (val_acc=0.7432)
+[SimpleCNN] Best val accuracy: 0.7432
+[ResNet] Using device: cuda
+
+[ResNet] Epoch 1/50
+  [100/391] loss: 1.8018  acc: 0.3318
+  [200/391] loss: 1.6428  acc: 0.3884
+  [300/391] loss: 1.5248  acc: 0.4362
+  Train loss: 1.4439  acc: 0.4681
+  Val   loss: 1.1346  acc: 0.5938
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.5938)
+
+[ResNet] Epoch 2/50
+  [100/391] loss: 1.0612  acc: 0.6120
+  [200/391] loss: 1.0327  acc: 0.6284
+  [300/391] loss: 1.0046  acc: 0.6398
+  Train loss: 0.9721  acc: 0.6525
+  Val   loss: 1.2764  acc: 0.5837
+
+[ResNet] Epoch 3/50
+  [100/391] loss: 0.8129  acc: 0.7101
+  [200/391] loss: 0.7994  acc: 0.7177
+  [300/391] loss: 0.7775  acc: 0.7268
+  Train loss: 0.7661  acc: 0.7317
+  Val   loss: 0.8528  acc: 0.6980
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.6980)
+
+[ResNet] Epoch 4/50
+  [100/391] loss: 0.6777  acc: 0.7666
+  [200/391] loss: 0.6668  acc: 0.7682
+  [300/391] loss: 0.6592  acc: 0.7712
+  Train loss: 0.6464  acc: 0.7751
+  Val   loss: 1.1018  acc: 0.6894
+
+[ResNet] Epoch 5/50
+  [100/391] loss: 0.5809  acc: 0.7959
+  [200/391] loss: 0.5790  acc: 0.7967
+  [300/391] loss: 0.5712  acc: 0.8002
+  Train loss: 0.5677  acc: 0.8032
+  Val   loss: 0.6553  acc: 0.7858
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.7858)
+
+[ResNet] Epoch 6/50
+  [100/391] loss: 0.4556  acc: 0.8452
+  [200/391] loss: 0.4538  acc: 0.8469
+  [300/391] loss: 0.4458  acc: 0.8490
+  Train loss: 0.4421  acc: 0.8493
+  Val   loss: 0.4762  acc: 0.8392
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.8392)
+
+[ResNet] Epoch 7/50
+  [100/391] loss: 0.3861  acc: 0.8679
+  [200/391] loss: 0.4000  acc: 0.8621
+  [300/391] loss: 0.4001  acc: 0.8626
+  Train loss: 0.4026  acc: 0.8615
+  Val   loss: 0.5473  acc: 0.8254
+
+[ResNet] Epoch 8/50
+  [100/391] loss: 0.3776  acc: 0.8686
+  [200/391] loss: 0.3777  acc: 0.8693
+  [300/391] loss: 0.3827  acc: 0.8687
+  Train loss: 0.3818  acc: 0.8689
+  Val   loss: 0.4906  acc: 0.8381
+
+[ResNet] Epoch 9/50
+  [100/391] loss: 0.3356  acc: 0.8812
+  [200/391] loss: 0.3504  acc: 0.8791
+  [300/391] loss: 0.3562  acc: 0.8774
+  Train loss: 0.3563  acc: 0.8777
+  Val   loss: 0.4559  acc: 0.8534
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.8534)
+
+[ResNet] Epoch 10/50
+  [100/391] loss: 0.3233  acc: 0.8923
+  [200/391] loss: 0.3213  acc: 0.8913
+  [300/391] loss: 0.3250  acc: 0.8898
+  Train loss: 0.3262  acc: 0.8884
+  Val   loss: 0.3995  acc: 0.8639
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.8639)
+
+[ResNet] Epoch 11/50
+  [100/391] loss: 0.2698  acc: 0.9079
+  [200/391] loss: 0.2571  acc: 0.9127
+  [300/391] loss: 0.2537  acc: 0.9131
+  Train loss: 0.2526  acc: 0.9133
+  Val   loss: 0.3578  acc: 0.8836
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.8836)
+
+[ResNet] Epoch 12/50
+  [100/391] loss: 0.2323  acc: 0.9202
+  [200/391] loss: 0.2339  acc: 0.9191
+  [300/391] loss: 0.2331  acc: 0.9195
+  Train loss: 0.2337  acc: 0.9190
+  Val   loss: 0.3940  acc: 0.8752
+
+[ResNet] Epoch 13/50
+  [100/391] loss: 0.2231  acc: 0.9234
+  [200/391] loss: 0.2208  acc: 0.9231
+  [300/391] loss: 0.2194  acc: 0.9240
+  Train loss: 0.2175  acc: 0.9243
+  Val   loss: 0.3467  acc: 0.8863
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.8863)
+
+[ResNet] Epoch 14/50
+  [100/391] loss: 0.1922  acc: 0.9334
+  [200/391] loss: 0.1962  acc: 0.9326
+  [300/391] loss: 0.1984  acc: 0.9320
+  Train loss: 0.2010  acc: 0.9306
+  Val   loss: 0.3103  acc: 0.8993
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.8993)
+
+[ResNet] Epoch 15/50
+  [100/391] loss: 0.1798  acc: 0.9375
+  [200/391] loss: 0.1883  acc: 0.9347
+  [300/391] loss: 0.1869  acc: 0.9354
+  Train loss: 0.1887  acc: 0.9348
+  Val   loss: 0.3331  acc: 0.8989
+
+[ResNet] Epoch 16/50
+  [100/391] loss: 0.1493  acc: 0.9498
+  [200/391] loss: 0.1469  acc: 0.9512
+  [300/391] loss: 0.1424  acc: 0.9526
+  Train loss: 0.1421  acc: 0.9524
+  Val   loss: 0.3281  acc: 0.8998
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.8998)
+
+[ResNet] Epoch 17/50
+  [100/391] loss: 0.1295  acc: 0.9561
+  [200/391] loss: 0.1316  acc: 0.9548
+  [300/391] loss: 0.1319  acc: 0.9549
+  Train loss: 0.1313  acc: 0.9553
+  Val   loss: 0.2887  acc: 0.9144
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.9144)
+
+[ResNet] Epoch 18/50
+  [100/391] loss: 0.1118  acc: 0.9602
+  [200/391] loss: 0.1116  acc: 0.9609
+  [300/391] loss: 0.1169  acc: 0.9591
+  Train loss: 0.1172  acc: 0.9592
+  Val   loss: 0.3174  acc: 0.9092
+
+[ResNet] Epoch 19/50
+  [100/391] loss: 0.1070  acc: 0.9630
+  [200/391] loss: 0.1066  acc: 0.9639
+  [300/391] loss: 0.1079  acc: 0.9632
+  Train loss: 0.1106  acc: 0.9624
+  Val   loss: 0.3067  acc: 0.9107
+
+[ResNet] Epoch 20/50
+  [100/391] loss: 0.0965  acc: 0.9650
+  [200/391] loss: 0.1002  acc: 0.9643
+  [300/391] loss: 0.1052  acc: 0.9630
+  Train loss: 0.1057  acc: 0.9632
+  Val   loss: 0.3102  acc: 0.9114
+
+[ResNet] Epoch 21/50
+  [100/391] loss: 0.0824  acc: 0.9730
+  [200/391] loss: 0.0789  acc: 0.9742
+  [300/391] loss: 0.0777  acc: 0.9741
+  Train loss: 0.0771  acc: 0.9741
+  Val   loss: 0.3032  acc: 0.9169
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.9169)
+
+[ResNet] Epoch 22/50
+  [100/391] loss: 0.0662  acc: 0.9770
+  [200/391] loss: 0.0669  acc: 0.9768
+  [300/391] loss: 0.0687  acc: 0.9760
+  Train loss: 0.0704  acc: 0.9756
+  Val   loss: 0.3040  acc: 0.9148
+
+[ResNet] Epoch 23/50
+  [100/391] loss: 0.0617  acc: 0.9795
+  [200/391] loss: 0.0654  acc: 0.9780
+  [300/391] loss: 0.0648  acc: 0.9779
+  Train loss: 0.0643  acc: 0.9782
+  Val   loss: 0.3143  acc: 0.9153
+
+[ResNet] Epoch 24/50
+  [100/391] loss: 0.0601  acc: 0.9791
+  [200/391] loss: 0.0619  acc: 0.9793
+  [300/391] loss: 0.0630  acc: 0.9790
+  Train loss: 0.0625  acc: 0.9792
+  Val   loss: 0.3280  acc: 0.9138
+
+[ResNet] Epoch 25/50
+  [100/391] loss: 0.0529  acc: 0.9819
+  [200/391] loss: 0.0539  acc: 0.9819
+  [300/391] loss: 0.0553  acc: 0.9814
+  Train loss: 0.0555  acc: 0.9809
+  Val   loss: 0.3234  acc: 0.9151
+
+[ResNet] Epoch 26/50
+  [100/391] loss: 0.0480  acc: 0.9839
+  [200/391] loss: 0.0463  acc: 0.9842
+  [300/391] loss: 0.0448  acc: 0.9848
+  Train loss: 0.0455  acc: 0.9846
+  Val   loss: 0.3155  acc: 0.9207
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.9207)
+
+[ResNet] Epoch 27/50
+  [100/391] loss: 0.0413  acc: 0.9867
+  [200/391] loss: 0.0403  acc: 0.9870
+  [300/391] loss: 0.0413  acc: 0.9863
+  Train loss: 0.0403  acc: 0.9868
+  Val   loss: 0.3278  acc: 0.9200
+
+[ResNet] Epoch 28/50
+  [100/391] loss: 0.0361  acc: 0.9883
+  [200/391] loss: 0.0360  acc: 0.9888
+  [300/391] loss: 0.0371  acc: 0.9884
+  Train loss: 0.0382  acc: 0.9878
+  Val   loss: 0.3325  acc: 0.9204
+
+[ResNet] Epoch 29/50
+  [100/391] loss: 0.0358  acc: 0.9887
+  [200/391] loss: 0.0342  acc: 0.9894
+  [300/391] loss: 0.0343  acc: 0.9890
+  Train loss: 0.0349  acc: 0.9885
+  Val   loss: 0.3367  acc: 0.9185
+
+[ResNet] Epoch 30/50
+  [100/391] loss: 0.0341  acc: 0.9877
+  [200/391] loss: 0.0335  acc: 0.9882
+  [300/391] loss: 0.0355  acc: 0.9879
+  Train loss: 0.0357  acc: 0.9880
+  Val   loss: 0.3348  acc: 0.9212
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.9212)
+
+[ResNet] Epoch 31/50
+  [100/391] loss: 0.0295  acc: 0.9905
+  [200/391] loss: 0.0291  acc: 0.9909
+  [300/391] loss: 0.0290  acc: 0.9908
+  Train loss: 0.0287  acc: 0.9911
+  Val   loss: 0.3375  acc: 0.9223
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.9223)
+
+[ResNet] Epoch 32/50
+  [100/391] loss: 0.0253  acc: 0.9923
+  [200/391] loss: 0.0257  acc: 0.9920
+  [300/391] loss: 0.0254  acc: 0.9920
+  Train loss: 0.0259  acc: 0.9921
+  Val   loss: 0.3372  acc: 0.9222
+
+[ResNet] Epoch 33/50
+  [100/391] loss: 0.0245  acc: 0.9918
+  [200/391] loss: 0.0243  acc: 0.9921
+  [300/391] loss: 0.0248  acc: 0.9920
+  Train loss: 0.0257  acc: 0.9916
+  Val   loss: 0.3363  acc: 0.9221
+
+[ResNet] Epoch 34/50
+  [100/391] loss: 0.0239  acc: 0.9933
+  [200/391] loss: 0.0244  acc: 0.9926
+  [300/391] loss: 0.0246  acc: 0.9925
+  Train loss: 0.0246  acc: 0.9924
+  Val   loss: 0.3427  acc: 0.9218
+
+[ResNet] Epoch 35/50
+  [100/391] loss: 0.0248  acc: 0.9922
+  [200/391] loss: 0.0246  acc: 0.9921
+  [300/391] loss: 0.0250  acc: 0.9920
+  Train loss: 0.0245  acc: 0.9923
+  Val   loss: 0.3408  acc: 0.9217
+
+[ResNet] Epoch 36/50
+  [100/391] loss: 0.0202  acc: 0.9946
+  [200/391] loss: 0.0211  acc: 0.9938
+  [300/391] loss: 0.0213  acc: 0.9937
+  Train loss: 0.0216  acc: 0.9935
+  Val   loss: 0.3356  acc: 0.9238
+  Saved best model → results/partb/best_model_resnet.pth  (val_acc=0.9238)
+
+[ResNet] Epoch 37/50
+  [100/391] loss: 0.0203  acc: 0.9941
+  [200/391] loss: 0.0206  acc: 0.9941
+  [300/391] loss: 0.0213  acc: 0.9939
+  Train loss: 0.0216  acc: 0.9936
+  Val   loss: 0.3419  acc: 0.9230
+
+[ResNet] Epoch 38/50
+  [100/391] loss: 0.0206  acc: 0.9938
+  [200/391] loss: 0.0203  acc: 0.9940
+  [300/391] loss: 0.0202  acc: 0.9939
+  Train loss: 0.0210  acc: 0.9937
+  Val   loss: 0.3429  acc: 0.9215
+
+[ResNet] Epoch 39/50
+  [100/391] loss: 0.0205  acc: 0.9942
+  [200/391] loss: 0.0189  acc: 0.9947
+  [300/391] loss: 0.0192  acc: 0.9946
+  Train loss: 0.0193  acc: 0.9943
+  Val   loss: 0.3450  acc: 0.9221
+
+[ResNet] Epoch 40/50
+  [100/391] loss: 0.0212  acc: 0.9930
+  [200/391] loss: 0.0206  acc: 0.9930
+  [300/391] loss: 0.0203  acc: 0.9931
+  Train loss: 0.0207  acc: 0.9932
+  Val   loss: 0.3440  acc: 0.9221
+
+[ResNet] Epoch 41/50
+  [100/391] loss: 0.0165  acc: 0.9953
+  [200/391] loss: 0.0183  acc: 0.9948
+  [300/391] loss: 0.0186  acc: 0.9947
+  Train loss: 0.0182  acc: 0.9947
+  Val   loss: 0.3478  acc: 0.9234
+
+[ResNet] Epoch 42/50
+  [100/391] loss: 0.0179  acc: 0.9948
+  [200/391] loss: 0.0178  acc: 0.9949
+  [300/391] loss: 0.0190  acc: 0.9943
+  Train loss: 0.0188  acc: 0.9944
+  Val   loss: 0.3464  acc: 0.9232
+
+[ResNet] Epoch 43/50
+  [100/391] loss: 0.0178  acc: 0.9949
+  [200/391] loss: 0.0173  acc: 0.9950
+  [300/391] loss: 0.0178  acc: 0.9948
+  Train loss: 0.0178  acc: 0.9949
+  Val   loss: 0.3469  acc: 0.9229
+
+[ResNet] Epoch 44/50
+  [100/391] loss: 0.0174  acc: 0.9948
+  [200/391] loss: 0.0173  acc: 0.9951
+  [300/391] loss: 0.0174  acc: 0.9950
+  Train loss: 0.0176  acc: 0.9950
+  Val   loss: 0.3467  acc: 0.9231
+
+[ResNet] Epoch 45/50
+  [100/391] loss: 0.0174  acc: 0.9947
+  [200/391] loss: 0.0172  acc: 0.9948
+  [300/391] loss: 0.0177  acc: 0.9947
+  Train loss: 0.0175  acc: 0.9948
+  Val   loss: 0.3538  acc: 0.9214
+
+[ResNet] Epoch 46/50
+  [100/391] loss: 0.0209  acc: 0.9935
+  [200/391] loss: 0.0191  acc: 0.9939
+  [300/391] loss: 0.0186  acc: 0.9943
+  Train loss: 0.0183  acc: 0.9944
+  Val   loss: 0.3502  acc: 0.9221
+  Early stopping at epoch 46
+[ResNet] Best val accuracy: 0.9238
+[ResNet] Using device: cuda
+
+[ResNet_ls0.1] Epoch 1/50
+  [100/391] loss: 1.9232  acc: 0.3334
+  [200/391] loss: 1.7847  acc: 0.3987
+  [300/391] loss: 1.7043  acc: 0.4356
+  Train loss: 1.6387  acc: 0.4682
+  Val   loss: 1.4952  acc: 0.5562
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.5562)
+
+[ResNet_ls0.1] Epoch 2/50
+  [100/391] loss: 1.3507  acc: 0.6173
+  [200/391] loss: 1.3182  acc: 0.6316
+  [300/391] loss: 1.2875  acc: 0.6458
+  Train loss: 1.2652  acc: 0.6568
+  Val   loss: 1.3049  acc: 0.6649
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.6649)
+
+[ResNet_ls0.1] Epoch 3/50
+  [100/391] loss: 1.1554  acc: 0.7124
+  [200/391] loss: 1.1282  acc: 0.7232
+  [300/391] loss: 1.1137  acc: 0.7317
+  Train loss: 1.1015  acc: 0.7365
+  Val   loss: 1.1491  acc: 0.7246
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.7246)
+
+[ResNet_ls0.1] Epoch 4/50
+  [100/391] loss: 1.0241  acc: 0.7748
+  [200/391] loss: 1.0180  acc: 0.7762
+  [300/391] loss: 1.0090  acc: 0.7806
+  Train loss: 1.0015  acc: 0.7827
+  Val   loss: 1.2816  acc: 0.6807
+
+[ResNet_ls0.1] Epoch 5/50
+  [100/391] loss: 0.9572  acc: 0.8029
+  [200/391] loss: 0.9545  acc: 0.8043
+  [300/391] loss: 0.9517  acc: 0.8047
+  Train loss: 0.9464  acc: 0.8063
+  Val   loss: 1.1841  acc: 0.7114
+
+[ResNet_ls0.1] Epoch 6/50
+  [100/391] loss: 0.8637  acc: 0.8424
+  [200/391] loss: 0.8568  acc: 0.8459
+  [300/391] loss: 0.8495  acc: 0.8488
+  Train loss: 0.8448  acc: 0.8509
+  Val   loss: 0.9089  acc: 0.8281
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.8281)
+
+[ResNet_ls0.1] Epoch 7/50
+  [100/391] loss: 0.8166  acc: 0.8630
+  [200/391] loss: 0.8252  acc: 0.8609
+  [300/391] loss: 0.8214  acc: 0.8624
+  Train loss: 0.8160  acc: 0.8645
+  Val   loss: 0.9510  acc: 0.8103
+
+[ResNet_ls0.1] Epoch 8/50
+  [100/391] loss: 0.7966  acc: 0.8722
+  [200/391] loss: 0.8004  acc: 0.8721
+  [300/391] loss: 0.7992  acc: 0.8731
+  Train loss: 0.7959  acc: 0.8743
+  Val   loss: 0.8408  acc: 0.8565
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.8565)
+
+[ResNet_ls0.1] Epoch 9/50
+  [100/391] loss: 0.7753  acc: 0.8807
+  [200/391] loss: 0.7773  acc: 0.8820
+  [300/391] loss: 0.7781  acc: 0.8826
+  Train loss: 0.7774  acc: 0.8830
+  Val   loss: 0.8553  acc: 0.8441
+
+[ResNet_ls0.1] Epoch 10/50
+  [100/391] loss: 0.7558  acc: 0.8918
+  [200/391] loss: 0.7542  acc: 0.8914
+  [300/391] loss: 0.7574  acc: 0.8897
+  Train loss: 0.7576  acc: 0.8896
+  Val   loss: 0.8251  acc: 0.8615
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.8615)
+
+[ResNet_ls0.1] Epoch 11/50
+  [100/391] loss: 0.6983  acc: 0.9173
+  [200/391] loss: 0.6959  acc: 0.9171
+  [300/391] loss: 0.6961  acc: 0.9166
+  Train loss: 0.6945  acc: 0.9173
+  Val   loss: 0.7611  acc: 0.8879
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.8879)
+
+[ResNet_ls0.1] Epoch 12/50
+  [100/391] loss: 0.6709  acc: 0.9273
+  [200/391] loss: 0.6763  acc: 0.9249
+  [300/391] loss: 0.6764  acc: 0.9252
+  Train loss: 0.6781  acc: 0.9247
+  Val   loss: 0.7597  acc: 0.8899
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.8899)
+
+[ResNet_ls0.1] Epoch 13/50
+  [100/391] loss: 0.6653  acc: 0.9303
+  [200/391] loss: 0.6662  acc: 0.9293
+  [300/391] loss: 0.6682  acc: 0.9289
+  Train loss: 0.6705  acc: 0.9276
+  Val   loss: 0.7448  acc: 0.8980
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.8980)
+
+[ResNet_ls0.1] Epoch 14/50
+  [100/391] loss: 0.6498  acc: 0.9348
+  [200/391] loss: 0.6549  acc: 0.9336
+  [300/391] loss: 0.6563  acc: 0.9330
+  Train loss: 0.6577  acc: 0.9331
+  Val   loss: 0.7872  acc: 0.8811
+
+[ResNet_ls0.1] Epoch 15/50
+  [100/391] loss: 0.6393  acc: 0.9426
+  [200/391] loss: 0.6440  acc: 0.9399
+  [300/391] loss: 0.6460  acc: 0.9387
+  Train loss: 0.6468  acc: 0.9382
+  Val   loss: 0.7453  acc: 0.8940
+
+[ResNet_ls0.1] Epoch 16/50
+  [100/391] loss: 0.6141  acc: 0.9523
+  [200/391] loss: 0.6089  acc: 0.9546
+  [300/391] loss: 0.6090  acc: 0.9551
+  Train loss: 0.6085  acc: 0.9548
+  Val   loss: 0.7172  acc: 0.9120
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9120)
+
+[ResNet_ls0.1] Epoch 17/50
+  [100/391] loss: 0.5971  acc: 0.9613
+  [200/391] loss: 0.5940  acc: 0.9615
+  [300/391] loss: 0.5976  acc: 0.9603
+  Train loss: 0.5976  acc: 0.9600
+  Val   loss: 0.7127  acc: 0.9136
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9136)
+
+[ResNet_ls0.1] Epoch 18/50
+  [100/391] loss: 0.5873  acc: 0.9647
+  [200/391] loss: 0.5884  acc: 0.9643
+  [300/391] loss: 0.5882  acc: 0.9639
+  Train loss: 0.5902  acc: 0.9627
+  Val   loss: 0.7211  acc: 0.9108
+
+[ResNet_ls0.1] Epoch 19/50
+  [100/391] loss: 0.5788  acc: 0.9677
+  [200/391] loss: 0.5834  acc: 0.9661
+  [300/391] loss: 0.5859  acc: 0.9651
+  Train loss: 0.5862  acc: 0.9651
+  Val   loss: 0.7100  acc: 0.9146
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9146)
+
+[ResNet_ls0.1] Epoch 20/50
+  [100/391] loss: 0.5743  acc: 0.9705
+  [200/391] loss: 0.5763  acc: 0.9696
+  [300/391] loss: 0.5806  acc: 0.9677
+  Train loss: 0.5810  acc: 0.9673
+  Val   loss: 0.7181  acc: 0.9138
+
+[ResNet_ls0.1] Epoch 21/50
+  [100/391] loss: 0.5655  acc: 0.9751
+  [200/391] loss: 0.5620  acc: 0.9762
+  [300/391] loss: 0.5606  acc: 0.9765
+  Train loss: 0.5611  acc: 0.9763
+  Val   loss: 0.7065  acc: 0.9183
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9183)
+
+[ResNet_ls0.1] Epoch 22/50
+  [100/391] loss: 0.5563  acc: 0.9775
+  [200/391] loss: 0.5534  acc: 0.9795
+  [300/391] loss: 0.5524  acc: 0.9795
+  Train loss: 0.5538  acc: 0.9791
+  Val   loss: 0.7066  acc: 0.9191
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9191)
+
+[ResNet_ls0.1] Epoch 23/50
+  [100/391] loss: 0.5482  acc: 0.9809
+  [200/391] loss: 0.5468  acc: 0.9819
+  [300/391] loss: 0.5485  acc: 0.9816
+  Train loss: 0.5492  acc: 0.9811
+  Val   loss: 0.7076  acc: 0.9185
+
+[ResNet_ls0.1] Epoch 24/50
+  [100/391] loss: 0.5417  acc: 0.9842
+  [200/391] loss: 0.5423  acc: 0.9843
+  [300/391] loss: 0.5445  acc: 0.9830
+  Train loss: 0.5455  acc: 0.9825
+  Val   loss: 0.7061  acc: 0.9198
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9198)
+
+[ResNet_ls0.1] Epoch 25/50
+  [100/391] loss: 0.5428  acc: 0.9838
+  [200/391] loss: 0.5439  acc: 0.9829
+  [300/391] loss: 0.5432  acc: 0.9835
+  Train loss: 0.5441  acc: 0.9831
+  Val   loss: 0.7134  acc: 0.9170
+
+[ResNet_ls0.1] Epoch 26/50
+  [100/391] loss: 0.5387  acc: 0.9852
+  [200/391] loss: 0.5372  acc: 0.9859
+  [300/391] loss: 0.5360  acc: 0.9866
+  Train loss: 0.5355  acc: 0.9869
+  Val   loss: 0.6970  acc: 0.9246
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9246)
+
+[ResNet_ls0.1] Epoch 27/50
+  [100/391] loss: 0.5307  acc: 0.9891
+  [200/391] loss: 0.5305  acc: 0.9893
+  [300/391] loss: 0.5302  acc: 0.9891
+  Train loss: 0.5305  acc: 0.9891
+  Val   loss: 0.7064  acc: 0.9238
+
+[ResNet_ls0.1] Epoch 28/50
+  [100/391] loss: 0.5263  acc: 0.9910
+  [200/391] loss: 0.5284  acc: 0.9904
+  [300/391] loss: 0.5280  acc: 0.9903
+  Train loss: 0.5287  acc: 0.9899
+  Val   loss: 0.7032  acc: 0.9249
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9249)
+
+[ResNet_ls0.1] Epoch 29/50
+  [100/391] loss: 0.5256  acc: 0.9913
+  [200/391] loss: 0.5285  acc: 0.9898
+  [300/391] loss: 0.5284  acc: 0.9901
+  Train loss: 0.5280  acc: 0.9904
+  Val   loss: 0.7031  acc: 0.9248
+
+[ResNet_ls0.1] Epoch 30/50
+  [100/391] loss: 0.5293  acc: 0.9905
+  [200/391] loss: 0.5276  acc: 0.9907
+  [300/391] loss: 0.5272  acc: 0.9904
+  Train loss: 0.5266  acc: 0.9904
+  Val   loss: 0.7077  acc: 0.9251
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9251)
+
+[ResNet_ls0.1] Epoch 31/50
+  [100/391] loss: 0.5220  acc: 0.9927
+  [200/391] loss: 0.5237  acc: 0.9921
+  [300/391] loss: 0.5238  acc: 0.9922
+  Train loss: 0.5238  acc: 0.9919
+  Val   loss: 0.7049  acc: 0.9236
+
+[ResNet_ls0.1] Epoch 32/50
+  [100/391] loss: 0.5216  acc: 0.9929
+  [200/391] loss: 0.5212  acc: 0.9932
+  [300/391] loss: 0.5210  acc: 0.9933
+  Train loss: 0.5209  acc: 0.9933
+  Val   loss: 0.7066  acc: 0.9248
+
+[ResNet_ls0.1] Epoch 33/50
+  [100/391] loss: 0.5204  acc: 0.9933
+  [200/391] loss: 0.5206  acc: 0.9933
+  [300/391] loss: 0.5204  acc: 0.9933
+  Train loss: 0.5208  acc: 0.9931
+  Val   loss: 0.7079  acc: 0.9237
+
+[ResNet_ls0.1] Epoch 34/50
+  [100/391] loss: 0.5194  acc: 0.9932
+  [200/391] loss: 0.5192  acc: 0.9929
+  [300/391] loss: 0.5186  acc: 0.9935
+  Train loss: 0.5192  acc: 0.9933
+  Val   loss: 0.7079  acc: 0.9253
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9253)
+
+[ResNet_ls0.1] Epoch 35/50
+  [100/391] loss: 0.5188  acc: 0.9941
+  [200/391] loss: 0.5180  acc: 0.9941
+  [300/391] loss: 0.5188  acc: 0.9936
+  Train loss: 0.5192  acc: 0.9935
+  Val   loss: 0.7116  acc: 0.9242
+
+[ResNet_ls0.1] Epoch 36/50
+  [100/391] loss: 0.5169  acc: 0.9948
+  [200/391] loss: 0.5169  acc: 0.9947
+  [300/391] loss: 0.5178  acc: 0.9942
+  Train loss: 0.5179  acc: 0.9942
+  Val   loss: 0.7072  acc: 0.9253
+
+[ResNet_ls0.1] Epoch 37/50
+  [100/391] loss: 0.5151  acc: 0.9957
+  [200/391] loss: 0.5151  acc: 0.9958
+  [300/391] loss: 0.5161  acc: 0.9953
+  Train loss: 0.5161  acc: 0.9951
+  Val   loss: 0.7088  acc: 0.9254
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9254)
+
+[ResNet_ls0.1] Epoch 38/50
+  [100/391] loss: 0.5170  acc: 0.9944
+  [200/391] loss: 0.5163  acc: 0.9945
+  [300/391] loss: 0.5162  acc: 0.9947
+  Train loss: 0.5160  acc: 0.9947
+  Val   loss: 0.7081  acc: 0.9264
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9264)
+
+[ResNet_ls0.1] Epoch 39/50
+  [100/391] loss: 0.5163  acc: 0.9952
+  [200/391] loss: 0.5163  acc: 0.9951
+  [300/391] loss: 0.5159  acc: 0.9953
+  Train loss: 0.5160  acc: 0.9953
+  Val   loss: 0.7082  acc: 0.9255
+
+[ResNet_ls0.1] Epoch 40/50
+  [100/391] loss: 0.5162  acc: 0.9951
+  [200/391] loss: 0.5155  acc: 0.9955
+  [300/391] loss: 0.5153  acc: 0.9954
+  Train loss: 0.5155  acc: 0.9953
+  Val   loss: 0.7083  acc: 0.9255
+
+[ResNet_ls0.1] Epoch 41/50
+  [100/391] loss: 0.5146  acc: 0.9955
+  [200/391] loss: 0.5145  acc: 0.9955
+  [300/391] loss: 0.5145  acc: 0.9957
+  Train loss: 0.5151  acc: 0.9956
+  Val   loss: 0.7075  acc: 0.9260
+
+[ResNet_ls0.1] Epoch 42/50
+  [100/391] loss: 0.5159  acc: 0.9947
+  [200/391] loss: 0.5156  acc: 0.9951
+  [300/391] loss: 0.5152  acc: 0.9953
+  Train loss: 0.5147  acc: 0.9955
+  Val   loss: 0.7077  acc: 0.9265
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9265)
+
+[ResNet_ls0.1] Epoch 43/50
+  [100/391] loss: 0.5149  acc: 0.9959
+  [200/391] loss: 0.5149  acc: 0.9957
+  [300/391] loss: 0.5152  acc: 0.9955
+  Train loss: 0.5148  acc: 0.9955
+  Val   loss: 0.7084  acc: 0.9267
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9267)
+
+[ResNet_ls0.1] Epoch 44/50
+  [100/391] loss: 0.5127  acc: 0.9959
+  [200/391] loss: 0.5134  acc: 0.9958
+  [300/391] loss: 0.5138  acc: 0.9957
+  Train loss: 0.5137  acc: 0.9958
+  Val   loss: 0.7079  acc: 0.9271
+  Saved best model → results/partb/best_model_resnet_ls0.1.pth  (val_acc=0.9271)
+
+[ResNet_ls0.1] Epoch 45/50
+  [100/391] loss: 0.5152  acc: 0.9958
+  [200/391] loss: 0.5134  acc: 0.9964
+  [300/391] loss: 0.5131  acc: 0.9964
+  Train loss: 0.5133  acc: 0.9962
+  Val   loss: 0.7071  acc: 0.9268
+
+[ResNet_ls0.1] Epoch 46/50
+  [100/391] loss: 0.5117  acc: 0.9970
+  [200/391] loss: 0.5123  acc: 0.9968
+  [300/391] loss: 0.5122  acc: 0.9966
+  Train loss: 0.5129  acc: 0.9963
+  Val   loss: 0.7084  acc: 0.9255
+
+[ResNet_ls0.1] Epoch 47/50
+  [100/391] loss: 0.5125  acc: 0.9967
+  [200/391] loss: 0.5127  acc: 0.9966
+  [300/391] loss: 0.5135  acc: 0.9961
+  Train loss: 0.5136  acc: 0.9961
+  Val   loss: 0.7071  acc: 0.9268
+
+[ResNet_ls0.1] Epoch 48/50
+  [100/391] loss: 0.5128  acc: 0.9966
+  [200/391] loss: 0.5129  acc: 0.9966
+  [300/391] loss: 0.5137  acc: 0.9961
+  Train loss: 0.5135  acc: 0.9960
+  Val   loss: 0.7071  acc: 0.9258
+
+[ResNet_ls0.1] Epoch 49/50
+  [100/391] loss: 0.5127  acc: 0.9966
+  [200/391] loss: 0.5123  acc: 0.9966
+  [300/391] loss: 0.5125  acc: 0.9965
+  Train loss: 0.5124  acc: 0.9965
+  Val   loss: 0.7083  acc: 0.9268
+
+[ResNet_ls0.1] Epoch 50/50
+  [100/391] loss: 0.5132  acc: 0.9959
+  [200/391] loss: 0.5139  acc: 0.9958
+  [300/391] loss: 0.5131  acc: 0.9962
+  Train loss: 0.5131  acc: 0.9961
+  Val   loss: 0.7094  acc: 0.9252
+[ResNet_ls0.1] Best val accuracy: 0.9271
+[SimpleCNN/kd] Using device: cuda
+
+[SimpleCNN/kd] Epoch 1/50
+  [100/391] loss: 2.6242  acc: 0.1768
+  [200/391] loss: 2.1862  acc: 0.2223
+  [300/391] loss: 2.0022  acc: 0.2599
+  Train loss: 1.8982  acc: 0.2875
+  Val   loss: 1.6720  acc: 0.4145
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.4145)
+
+[SimpleCNN/kd] Epoch 2/50
+  [100/391] loss: 1.4970  acc: 0.4047
+  [200/391] loss: 1.4731  acc: 0.4187
+  [300/391] loss: 1.4549  acc: 0.4273
+  Train loss: 1.4376  acc: 0.4356
+  Val   loss: 1.4668  acc: 0.4986
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.4986)
+
+[SimpleCNN/kd] Epoch 3/50
+  [100/391] loss: 1.3444  acc: 0.4918
+  [200/391] loss: 1.3334  acc: 0.4971
+  [300/391] loss: 1.3203  acc: 0.5016
+  Train loss: 1.3083  acc: 0.5071
+  Val   loss: 1.3382  acc: 0.5626
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.5626)
+
+[SimpleCNN/kd] Epoch 4/50
+  [100/391] loss: 1.2571  acc: 0.5357
+  [200/391] loss: 1.2421  acc: 0.5443
+  [300/391] loss: 1.2327  acc: 0.5487
+  Train loss: 1.2260  acc: 0.5512
+  Val   loss: 1.2664  acc: 0.5821
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.5821)
+
+[SimpleCNN/kd] Epoch 5/50
+  [100/391] loss: 1.1731  acc: 0.5747
+  [200/391] loss: 1.1683  acc: 0.5781
+  [300/391] loss: 1.1654  acc: 0.5797
+  Train loss: 1.1627  acc: 0.5820
+  Val   loss: 1.1916  acc: 0.6175
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6175)
+
+[SimpleCNN/kd] Epoch 6/50
+  [100/391] loss: 1.1153  acc: 0.6085
+  [200/391] loss: 1.1081  acc: 0.6098
+  [300/391] loss: 1.1070  acc: 0.6106
+  Train loss: 1.1092  acc: 0.6080
+  Val   loss: 1.1630  acc: 0.6298
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6298)
+
+[SimpleCNN/kd] Epoch 7/50
+  [100/391] loss: 1.0939  acc: 0.6147
+  [200/391] loss: 1.0905  acc: 0.6189
+  [300/391] loss: 1.0879  acc: 0.6204
+  Train loss: 1.0852  acc: 0.6210
+  Val   loss: 1.1049  acc: 0.6495
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6495)
+
+[SimpleCNN/kd] Epoch 8/50
+  [100/391] loss: 1.0671  acc: 0.6277
+  [200/391] loss: 1.0651  acc: 0.6278
+  [300/391] loss: 1.0652  acc: 0.6288
+  Train loss: 1.0631  acc: 0.6298
+  Val   loss: 1.0901  acc: 0.6569
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6569)
+
+[SimpleCNN/kd] Epoch 9/50
+  [100/391] loss: 1.0534  acc: 0.6380
+  [200/391] loss: 1.0502  acc: 0.6378
+  [300/391] loss: 1.0487  acc: 0.6388
+  Train loss: 1.0456  acc: 0.6391
+  Val   loss: 1.0646  acc: 0.6677
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6677)
+
+[SimpleCNN/kd] Epoch 10/50
+  [100/391] loss: 1.0272  acc: 0.6510
+  [200/391] loss: 1.0293  acc: 0.6485
+  [300/391] loss: 1.0246  acc: 0.6501
+  Train loss: 1.0227  acc: 0.6495
+  Val   loss: 1.0566  acc: 0.6693
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6693)
+
+[SimpleCNN/kd] Epoch 11/50
+  [100/391] loss: 0.9961  acc: 0.6587
+  [200/391] loss: 1.0013  acc: 0.6579
+  [300/391] loss: 0.9992  acc: 0.6600
+  Train loss: 0.9992  acc: 0.6586
+  Val   loss: 1.0305  acc: 0.6787
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6787)
+
+[SimpleCNN/kd] Epoch 12/50
+  [100/391] loss: 1.0028  acc: 0.6554
+  [200/391] loss: 0.9938  acc: 0.6604
+  [300/391] loss: 0.9873  acc: 0.6637
+  Train loss: 0.9894  acc: 0.6617
+  Val   loss: 1.0131  acc: 0.6846
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6846)
+
+[SimpleCNN/kd] Epoch 13/50
+  [100/391] loss: 0.9758  acc: 0.6672
+  [200/391] loss: 0.9764  acc: 0.6670
+  [300/391] loss: 0.9783  acc: 0.6674
+  Train loss: 0.9798  acc: 0.6666
+  Val   loss: 0.9963  acc: 0.6892
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6892)
+
+[SimpleCNN/kd] Epoch 14/50
+  [100/391] loss: 0.9606  acc: 0.6753
+  [200/391] loss: 0.9741  acc: 0.6690
+  [300/391] loss: 0.9703  acc: 0.6703
+  Train loss: 0.9702  acc: 0.6694
+  Val   loss: 0.9961  acc: 0.6892
+
+[SimpleCNN/kd] Epoch 15/50
+  [100/391] loss: 0.9729  acc: 0.6684
+  [200/391] loss: 0.9661  acc: 0.6706
+  [300/391] loss: 0.9643  acc: 0.6737
+  Train loss: 0.9642  acc: 0.6742
+  Val   loss: 0.9905  acc: 0.6922
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.6922)
+
+[SimpleCNN/kd] Epoch 16/50
+  [100/391] loss: 0.9566  acc: 0.6736
+  [200/391] loss: 0.9514  acc: 0.6764
+  [300/391] loss: 0.9495  acc: 0.6771
+  Train loss: 0.9457  acc: 0.6796
+  Val   loss: 0.9727  acc: 0.7007
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7007)
+
+[SimpleCNN/kd] Epoch 17/50
+  [100/391] loss: 0.9428  acc: 0.6794
+  [200/391] loss: 0.9412  acc: 0.6832
+  [300/391] loss: 0.9413  acc: 0.6817
+  Train loss: 0.9386  acc: 0.6846
+  Val   loss: 0.9615  acc: 0.7040
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7040)
+
+[SimpleCNN/kd] Epoch 18/50
+  [100/391] loss: 0.9328  acc: 0.6897
+  [200/391] loss: 0.9312  acc: 0.6906
+  [300/391] loss: 0.9341  acc: 0.6878
+  Train loss: 0.9338  acc: 0.6867
+  Val   loss: 0.9561  acc: 0.7033
+
+[SimpleCNN/kd] Epoch 19/50
+  [100/391] loss: 0.9362  acc: 0.6837
+  [200/391] loss: 0.9335  acc: 0.6862
+  [300/391] loss: 0.9304  acc: 0.6882
+  Train loss: 0.9311  acc: 0.6875
+  Val   loss: 0.9500  acc: 0.7068
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7068)
+
+[SimpleCNN/kd] Epoch 20/50
+  [100/391] loss: 0.9271  acc: 0.6855
+  [200/391] loss: 0.9290  acc: 0.6868
+  [300/391] loss: 0.9282  acc: 0.6873
+  Train loss: 0.9259  acc: 0.6891
+  Val   loss: 0.9467  acc: 0.7087
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7087)
+
+[SimpleCNN/kd] Epoch 21/50
+  [100/391] loss: 0.9019  acc: 0.6993
+  [200/391] loss: 0.9057  acc: 0.6979
+  [300/391] loss: 0.9078  acc: 0.6975
+  Train loss: 0.9134  acc: 0.6950
+  Val   loss: 0.9400  acc: 0.7131
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7131)
+
+[SimpleCNN/kd] Epoch 22/50
+  [100/391] loss: 0.9005  acc: 0.7016
+  [200/391] loss: 0.9027  acc: 0.7011
+  [300/391] loss: 0.9044  acc: 0.6993
+  Train loss: 0.9092  acc: 0.6963
+  Val   loss: 0.9369  acc: 0.7163
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7163)
+
+[SimpleCNN/kd] Epoch 23/50
+  [100/391] loss: 0.9077  acc: 0.6995
+  [200/391] loss: 0.9066  acc: 0.6974
+  [300/391] loss: 0.9078  acc: 0.6975
+  Train loss: 0.9079  acc: 0.6973
+  Val   loss: 0.9419  acc: 0.7109
+
+[SimpleCNN/kd] Epoch 24/50
+  [100/391] loss: 0.9197  acc: 0.6884
+  [200/391] loss: 0.9074  acc: 0.6973
+  [300/391] loss: 0.9091  acc: 0.6959
+  Train loss: 0.9091  acc: 0.6965
+  Val   loss: 0.9339  acc: 0.7120
+
+[SimpleCNN/kd] Epoch 25/50
+  [100/391] loss: 0.8998  acc: 0.7028
+  [200/391] loss: 0.9019  acc: 0.7006
+  [300/391] loss: 0.9029  acc: 0.6990
+  Train loss: 0.9040  acc: 0.6992
+  Val   loss: 0.9247  acc: 0.7183
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7183)
+
+[SimpleCNN/kd] Epoch 26/50
+  [100/391] loss: 0.9054  acc: 0.6981
+  [200/391] loss: 0.8988  acc: 0.7027
+  [300/391] loss: 0.9009  acc: 0.7020
+  Train loss: 0.9002  acc: 0.7016
+  Val   loss: 0.9324  acc: 0.7131
+
+[SimpleCNN/kd] Epoch 27/50
+  [100/391] loss: 0.8956  acc: 0.7007
+  [200/391] loss: 0.8986  acc: 0.7009
+  [300/391] loss: 0.8993  acc: 0.7019
+  Train loss: 0.8989  acc: 0.7024
+  Val   loss: 0.9274  acc: 0.7168
+
+[SimpleCNN/kd] Epoch 28/50
+  [100/391] loss: 0.9089  acc: 0.6984
+  [200/391] loss: 0.9024  acc: 0.7006
+  [300/391] loss: 0.8990  acc: 0.7023
+  Train loss: 0.8978  acc: 0.7037
+  Val   loss: 0.9232  acc: 0.7151
+
+[SimpleCNN/kd] Epoch 29/50
+  [100/391] loss: 0.8954  acc: 0.7037
+  [200/391] loss: 0.8962  acc: 0.7042
+  [300/391] loss: 0.8965  acc: 0.7031
+  Train loss: 0.8976  acc: 0.7037
+  Val   loss: 0.9260  acc: 0.7186
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7186)
+
+[SimpleCNN/kd] Epoch 30/50
+  [100/391] loss: 0.8922  acc: 0.7019
+  [200/391] loss: 0.8917  acc: 0.7042
+  [300/391] loss: 0.8936  acc: 0.7028
+  Train loss: 0.8938  acc: 0.7026
+  Val   loss: 0.9207  acc: 0.7208
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7208)
+
+[SimpleCNN/kd] Epoch 31/50
+  [100/391] loss: 0.8922  acc: 0.7046
+  [200/391] loss: 0.8907  acc: 0.7056
+  [300/391] loss: 0.8899  acc: 0.7069
+  Train loss: 0.8900  acc: 0.7061
+  Val   loss: 0.9208  acc: 0.7210
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7210)
+
+[SimpleCNN/kd] Epoch 32/50
+  [100/391] loss: 0.8964  acc: 0.6985
+  [200/391] loss: 0.8941  acc: 0.7014
+  [300/391] loss: 0.8899  acc: 0.7042
+  Train loss: 0.8925  acc: 0.7042
+  Val   loss: 0.9207  acc: 0.7201
+
+[SimpleCNN/kd] Epoch 33/50
+  [100/391] loss: 0.8889  acc: 0.7059
+  [200/391] loss: 0.8927  acc: 0.7034
+  [300/391] loss: 0.8910  acc: 0.7058
+  Train loss: 0.8906  acc: 0.7053
+  Val   loss: 0.9179  acc: 0.7201
+
+[SimpleCNN/kd] Epoch 34/50
+  [100/391] loss: 0.8869  acc: 0.7054
+  [200/391] loss: 0.8915  acc: 0.7043
+  [300/391] loss: 0.8912  acc: 0.7034
+  Train loss: 0.8906  acc: 0.7035
+  Val   loss: 0.9197  acc: 0.7213
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7213)
+
+[SimpleCNN/kd] Epoch 35/50
+  [100/391] loss: 0.8793  acc: 0.7134
+  [200/391] loss: 0.8862  acc: 0.7081
+  [300/391] loss: 0.8865  acc: 0.7070
+  Train loss: 0.8890  acc: 0.7055
+  Val   loss: 0.9187  acc: 0.7207
+
+[SimpleCNN/kd] Epoch 36/50
+  [100/391] loss: 0.8826  acc: 0.7077
+  [200/391] loss: 0.8861  acc: 0.7044
+  [300/391] loss: 0.8880  acc: 0.7049
+  Train loss: 0.8889  acc: 0.7045
+  Val   loss: 0.9166  acc: 0.7210
+
+[SimpleCNN/kd] Epoch 37/50
+  [100/391] loss: 0.8865  acc: 0.7089
+  [200/391] loss: 0.8860  acc: 0.7068
+  [300/391] loss: 0.8887  acc: 0.7063
+  Train loss: 0.8865  acc: 0.7074
+  Val   loss: 0.9174  acc: 0.7214
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7214)
+
+[SimpleCNN/kd] Epoch 38/50
+  [100/391] loss: 0.8739  acc: 0.7121
+  [200/391] loss: 0.8868  acc: 0.7067
+  [300/391] loss: 0.8893  acc: 0.7047
+  Train loss: 0.8894  acc: 0.7057
+  Val   loss: 0.9166  acc: 0.7225
+  Saved best model → results/partb/best_model_simplecnn_kd.pth  (val_acc=0.7225)
+
+[SimpleCNN/kd] Epoch 39/50
+  [100/391] loss: 0.8924  acc: 0.7051
+  [200/391] loss: 0.8894  acc: 0.7061
+  [300/391] loss: 0.8871  acc: 0.7070
+  Train loss: 0.8881  acc: 0.7064
+  Val   loss: 0.9163  acc: 0.7218
+
+[SimpleCNN/kd] Epoch 40/50
+  [100/391] loss: 0.8872  acc: 0.7048
+  [200/391] loss: 0.8883  acc: 0.7048
+  [300/391] loss: 0.8881  acc: 0.7037
+  Train loss: 0.8899  acc: 0.7035
+  Val   loss: 0.9170  acc: 0.7220
+
+[SimpleCNN/kd] Epoch 41/50
+  [100/391] loss: 0.8832  acc: 0.7067
+  [200/391] loss: 0.8894  acc: 0.7066
+  [300/391] loss: 0.8883  acc: 0.7054
+  Train loss: 0.8883  acc: 0.7053
+  Val   loss: 0.9151  acc: 0.7224
+
+[SimpleCNN/kd] Epoch 42/50
+  [100/391] loss: 0.8894  acc: 0.7042
+  [200/391] loss: 0.8873  acc: 0.7058
+  [300/391] loss: 0.8887  acc: 0.7053
+  Train loss: 0.8881  acc: 0.7063
+  Val   loss: 0.9162  acc: 0.7224
+
+[SimpleCNN/kd] Epoch 43/50
+  [100/391] loss: 0.8909  acc: 0.7038
+  [200/391] loss: 0.8871  acc: 0.7064
+  [300/391] loss: 0.8820  acc: 0.7088
+  Train loss: 0.8862  acc: 0.7071
+  Val   loss: 0.9148  acc: 0.7214
+
+[SimpleCNN/kd] Epoch 44/50
+  [100/391] loss: 0.8816  acc: 0.7063
+  [200/391] loss: 0.8912  acc: 0.7021
+  [300/391] loss: 0.8896  acc: 0.7021
+  Train loss: 0.8853  acc: 0.7048
+  Val   loss: 0.9155  acc: 0.7209
+
+[SimpleCNN/kd] Epoch 45/50
+  [100/391] loss: 0.8881  acc: 0.7087
+  [200/391] loss: 0.8877  acc: 0.7082
+  [300/391] loss: 0.8852  acc: 0.7088
+  Train loss: 0.8873  acc: 0.7082
+  Val   loss: 0.9150  acc: 0.7220
+
+[SimpleCNN/kd] Epoch 46/50
+  [100/391] loss: 0.8889  acc: 0.7091
+  [200/391] loss: 0.8838  acc: 0.7096
+  [300/391] loss: 0.8838  acc: 0.7087
+  Train loss: 0.8845  acc: 0.7092
+  Val   loss: 0.9141  acc: 0.7211
+
+[SimpleCNN/kd] Epoch 47/50
+  [100/391] loss: 0.8891  acc: 0.7063
+  [200/391] loss: 0.8816  acc: 0.7084
+  [300/391] loss: 0.8866  acc: 0.7052
+  Train loss: 0.8871  acc: 0.7053
+  Val   loss: 0.9144  acc: 0.7220
+
+[SimpleCNN/kd] Epoch 48/50
+  [100/391] loss: 0.8815  acc: 0.7109
+  [200/391] loss: 0.8791  acc: 0.7113
+  [300/391] loss: 0.8807  acc: 0.7096
+  Train loss: 0.8827  acc: 0.7086
+  Val   loss: 0.9138  acc: 0.7222
+  Early stopping at epoch 48
+[SimpleCNN/kd] Best val accuracy: 0.7225
+[MobileNet/modified_kd] Using device: cuda
+
+[MobileNet/modified_kd] Epoch 1/50
+  [100/391] loss: 1.9767  acc: 0.2954
+  [200/391] loss: 1.8530  acc: 0.3621
+  [300/391] loss: 1.7789  acc: 0.4024
+  Train loss: 1.7205  acc: 0.4332
+  Val   loss: 1.2190  acc: 0.5727
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.5727)
+
+[MobileNet/modified_kd] Epoch 2/50
+  [100/391] loss: 1.4276  acc: 0.5766
+  [200/391] loss: 1.4020  acc: 0.5913
+  [300/391] loss: 1.3813  acc: 0.6024
+  Train loss: 1.3597  acc: 0.6134
+  Val   loss: 0.9946  acc: 0.6630
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.6630)
+
+[MobileNet/modified_kd] Epoch 3/50
+  [100/391] loss: 1.2348  acc: 0.6702
+  [200/391] loss: 1.2240  acc: 0.6758
+  [300/391] loss: 1.2096  acc: 0.6835
+  Train loss: 1.1969  acc: 0.6903
+  Val   loss: 0.8921  acc: 0.7026
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.7026)
+
+[MobileNet/modified_kd] Epoch 4/50
+  [100/391] loss: 1.1115  acc: 0.7349
+  [200/391] loss: 1.1072  acc: 0.7370
+  [300/391] loss: 1.0957  acc: 0.7411
+  Train loss: 1.0930  acc: 0.7419
+  Val   loss: 0.7719  acc: 0.7483
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.7483)
+
+[MobileNet/modified_kd] Epoch 5/50
+  [100/391] loss: 1.0286  acc: 0.7689
+  [200/391] loss: 1.0327  acc: 0.7707
+  [300/391] loss: 1.0283  acc: 0.7729
+  Train loss: 1.0251  acc: 0.7738
+  Val   loss: 0.7286  acc: 0.7684
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.7684)
+
+[MobileNet/modified_kd] Epoch 6/50
+  [100/391] loss: 0.9397  acc: 0.8103
+  [200/391] loss: 0.9291  acc: 0.8146
+  [300/391] loss: 0.9243  acc: 0.8171
+  Train loss: 0.9212  acc: 0.8183
+  Val   loss: 0.5610  acc: 0.8279
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8279)
+
+[MobileNet/modified_kd] Epoch 7/50
+  [100/391] loss: 0.8797  acc: 0.8384
+  [200/391] loss: 0.8866  acc: 0.8341
+  [300/391] loss: 0.8898  acc: 0.8330
+  Train loss: 0.8922  acc: 0.8321
+  Val   loss: 0.5783  acc: 0.8237
+
+[MobileNet/modified_kd] Epoch 8/50
+  [100/391] loss: 0.8650  acc: 0.8427
+  [200/391] loss: 0.8698  acc: 0.8409
+  [300/391] loss: 0.8667  acc: 0.8422
+  Train loss: 0.8695  acc: 0.8415
+  Val   loss: 0.5528  acc: 0.8328
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8328)
+
+[MobileNet/modified_kd] Epoch 9/50
+  [100/391] loss: 0.8411  acc: 0.8573
+  [200/391] loss: 0.8444  acc: 0.8559
+  [300/391] loss: 0.8465  acc: 0.8541
+  Train loss: 0.8478  acc: 0.8526
+  Val   loss: 0.5579  acc: 0.8301
+
+[MobileNet/modified_kd] Epoch 10/50
+  [100/391] loss: 0.8275  acc: 0.8617
+  [200/391] loss: 0.8284  acc: 0.8614
+  [300/391] loss: 0.8299  acc: 0.8607
+  Train loss: 0.8325  acc: 0.8596
+  Val   loss: 0.5158  acc: 0.8440
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8440)
+
+[MobileNet/modified_kd] Epoch 11/50
+  [100/391] loss: 0.7813  acc: 0.8845
+  [200/391] loss: 0.7799  acc: 0.8841
+  [300/391] loss: 0.7751  acc: 0.8861
+  Train loss: 0.7766  acc: 0.8853
+  Val   loss: 0.4569  acc: 0.8678
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8678)
+
+[MobileNet/modified_kd] Epoch 12/50
+  [100/391] loss: 0.7454  acc: 0.8998
+  [200/391] loss: 0.7520  acc: 0.8950
+  [300/391] loss: 0.7539  acc: 0.8938
+  Train loss: 0.7563  acc: 0.8929
+  Val   loss: 0.4466  acc: 0.8686
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8686)
+
+[MobileNet/modified_kd] Epoch 13/50
+  [100/391] loss: 0.7428  acc: 0.8966
+  [200/391] loss: 0.7507  acc: 0.8942
+  [300/391] loss: 0.7497  acc: 0.8949
+  Train loss: 0.7498  acc: 0.8946
+  Val   loss: 0.4460  acc: 0.8719
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8719)
+
+[MobileNet/modified_kd] Epoch 14/50
+  [100/391] loss: 0.7279  acc: 0.9070
+  [200/391] loss: 0.7359  acc: 0.9030
+  [300/391] loss: 0.7388  acc: 0.9016
+  Train loss: 0.7376  acc: 0.9014
+  Val   loss: 0.4455  acc: 0.8693
+
+[MobileNet/modified_kd] Epoch 15/50
+  [100/391] loss: 0.7218  acc: 0.9098
+  [200/391] loss: 0.7247  acc: 0.9092
+  [300/391] loss: 0.7255  acc: 0.9083
+  Train loss: 0.7277  acc: 0.9070
+  Val   loss: 0.4420  acc: 0.8714
+
+[MobileNet/modified_kd] Epoch 16/50
+  [100/391] loss: 0.7115  acc: 0.9146
+  [200/391] loss: 0.7002  acc: 0.9198
+  [300/391] loss: 0.6974  acc: 0.9198
+  Train loss: 0.6955  acc: 0.9204
+  Val   loss: 0.4175  acc: 0.8834
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8834)
+
+[MobileNet/modified_kd] Epoch 17/50
+  [100/391] loss: 0.6823  acc: 0.9255
+  [200/391] loss: 0.6851  acc: 0.9239
+  [300/391] loss: 0.6862  acc: 0.9234
+  Train loss: 0.6868  acc: 0.9232
+  Val   loss: 0.4069  acc: 0.8871
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8871)
+
+[MobileNet/modified_kd] Epoch 18/50
+  [100/391] loss: 0.6782  acc: 0.9280
+  [200/391] loss: 0.6795  acc: 0.9266
+  [300/391] loss: 0.6794  acc: 0.9272
+  Train loss: 0.6801  acc: 0.9272
+  Val   loss: 0.4143  acc: 0.8837
+
+[MobileNet/modified_kd] Epoch 19/50
+  [100/391] loss: 0.6797  acc: 0.9287
+  [200/391] loss: 0.6735  acc: 0.9309
+  [300/391] loss: 0.6724  acc: 0.9313
+  Train loss: 0.6716  acc: 0.9313
+  Val   loss: 0.4135  acc: 0.8860
+
+[MobileNet/modified_kd] Epoch 20/50
+  [100/391] loss: 0.6667  acc: 0.9322
+  [200/391] loss: 0.6653  acc: 0.9323
+  [300/391] loss: 0.6679  acc: 0.9315
+  Train loss: 0.6693  acc: 0.9312
+  Val   loss: 0.4132  acc: 0.8848
+
+[MobileNet/modified_kd] Epoch 21/50
+  [100/391] loss: 0.6510  acc: 0.9395
+  [200/391] loss: 0.6480  acc: 0.9409
+  [300/391] loss: 0.6511  acc: 0.9400
+  Train loss: 0.6522  acc: 0.9396
+  Val   loss: 0.3984  acc: 0.8892
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8892)
+
+[MobileNet/modified_kd] Epoch 22/50
+  [100/391] loss: 0.6402  acc: 0.9462
+  [200/391] loss: 0.6391  acc: 0.9461
+  [300/391] loss: 0.6393  acc: 0.9458
+  Train loss: 0.6422  acc: 0.9448
+  Val   loss: 0.4030  acc: 0.8899
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8899)
+
+[MobileNet/modified_kd] Epoch 23/50
+  [100/391] loss: 0.6354  acc: 0.9470
+  [200/391] loss: 0.6390  acc: 0.9461
+  [300/391] loss: 0.6399  acc: 0.9457
+  Train loss: 0.6421  acc: 0.9447
+  Val   loss: 0.4007  acc: 0.8881
+
+[MobileNet/modified_kd] Epoch 24/50
+  [100/391] loss: 0.6343  acc: 0.9487
+  [200/391] loss: 0.6348  acc: 0.9484
+  [300/391] loss: 0.6375  acc: 0.9469
+  Train loss: 0.6387  acc: 0.9465
+  Val   loss: 0.3959  acc: 0.8903
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8903)
+
+[MobileNet/modified_kd] Epoch 25/50
+  [100/391] loss: 0.6326  acc: 0.9511
+  [200/391] loss: 0.6332  acc: 0.9491
+  [300/391] loss: 0.6329  acc: 0.9488
+  Train loss: 0.6335  acc: 0.9483
+  Val   loss: 0.4022  acc: 0.8919
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8919)
+
+[MobileNet/modified_kd] Epoch 26/50
+  [100/391] loss: 0.6286  acc: 0.9492
+  [200/391] loss: 0.6262  acc: 0.9516
+  [300/391] loss: 0.6272  acc: 0.9511
+  Train loss: 0.6286  acc: 0.9511
+  Val   loss: 0.3923  acc: 0.8943
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8943)
+
+[MobileNet/modified_kd] Epoch 27/50
+  [100/391] loss: 0.6193  acc: 0.9559
+  [200/391] loss: 0.6219  acc: 0.9548
+  [300/391] loss: 0.6213  acc: 0.9542
+  Train loss: 0.6218  acc: 0.9540
+  Val   loss: 0.3939  acc: 0.8929
+
+[MobileNet/modified_kd] Epoch 28/50
+  [100/391] loss: 0.6201  acc: 0.9551
+  [200/391] loss: 0.6214  acc: 0.9540
+  [300/391] loss: 0.6220  acc: 0.9542
+  Train loss: 0.6207  acc: 0.9541
+  Val   loss: 0.3960  acc: 0.8936
+
+[MobileNet/modified_kd] Epoch 29/50
+  [100/391] loss: 0.6235  acc: 0.9535
+  [200/391] loss: 0.6239  acc: 0.9530
+  [300/391] loss: 0.6243  acc: 0.9525
+  Train loss: 0.6233  acc: 0.9535
+  Val   loss: 0.4009  acc: 0.8912
+
+[MobileNet/modified_kd] Epoch 30/50
+  [100/391] loss: 0.6130  acc: 0.9587
+  [200/391] loss: 0.6141  acc: 0.9571
+  [300/391] loss: 0.6154  acc: 0.9564
+  Train loss: 0.6153  acc: 0.9569
+  Val   loss: 0.3949  acc: 0.8944
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8944)
+
+[MobileNet/modified_kd] Epoch 31/50
+  [100/391] loss: 0.6129  acc: 0.9589
+  [200/391] loss: 0.6130  acc: 0.9587
+  [300/391] loss: 0.6126  acc: 0.9587
+  Train loss: 0.6127  acc: 0.9581
+  Val   loss: 0.3937  acc: 0.8946
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8946)
+
+[MobileNet/modified_kd] Epoch 32/50
+  [100/391] loss: 0.6144  acc: 0.9573
+  [200/391] loss: 0.6122  acc: 0.9578
+  [300/391] loss: 0.6122  acc: 0.9582
+  Train loss: 0.6114  acc: 0.9585
+  Val   loss: 0.3936  acc: 0.8950
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8950)
+
+[MobileNet/modified_kd] Epoch 33/50
+  [100/391] loss: 0.6068  acc: 0.9599
+  [200/391] loss: 0.6054  acc: 0.9604
+  [300/391] loss: 0.6077  acc: 0.9592
+  Train loss: 0.6080  acc: 0.9597
+  Val   loss: 0.3916  acc: 0.8949
+
+[MobileNet/modified_kd] Epoch 34/50
+  [100/391] loss: 0.6055  acc: 0.9620
+  [200/391] loss: 0.6087  acc: 0.9611
+  [300/391] loss: 0.6094  acc: 0.9598
+  Train loss: 0.6099  acc: 0.9595
+  Val   loss: 0.3944  acc: 0.8954
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8954)
+
+[MobileNet/modified_kd] Epoch 35/50
+  [100/391] loss: 0.6094  acc: 0.9591
+  [200/391] loss: 0.6065  acc: 0.9604
+  [300/391] loss: 0.6079  acc: 0.9601
+  Train loss: 0.6090  acc: 0.9593
+  Val   loss: 0.3943  acc: 0.8945
+
+[MobileNet/modified_kd] Epoch 36/50
+  [100/391] loss: 0.6047  acc: 0.9630
+  [200/391] loss: 0.6058  acc: 0.9618
+  [300/391] loss: 0.6065  acc: 0.9610
+  Train loss: 0.6063  acc: 0.9611
+  Val   loss: 0.3939  acc: 0.8968
+  Saved best model → results/partb/best_model_mobilenet_modified_kd.pth  (val_acc=0.8968)
+
+[MobileNet/modified_kd] Epoch 37/50
+  [100/391] loss: 0.6056  acc: 0.9591
+  [200/391] loss: 0.6086  acc: 0.9589
+  [300/391] loss: 0.6079  acc: 0.9598
+  Train loss: 0.6073  acc: 0.9596
+  Val   loss: 0.3920  acc: 0.8957
+
+[MobileNet/modified_kd] Epoch 38/50
+  [100/391] loss: 0.6068  acc: 0.9605
+  [200/391] loss: 0.6056  acc: 0.9609
+  [300/391] loss: 0.6048  acc: 0.9618
+  Train loss: 0.6059  acc: 0.9619
+  Val   loss: 0.3929  acc: 0.8956
+
+[MobileNet/modified_kd] Epoch 39/50
+  [100/391] loss: 0.6046  acc: 0.9625
+  [200/391] loss: 0.6041  acc: 0.9618
+  [300/391] loss: 0.6039  acc: 0.9617
+  Train loss: 0.6048  acc: 0.9612
+  Val   loss: 0.3955  acc: 0.8948
+
+[MobileNet/modified_kd] Epoch 40/50
+  [100/391] loss: 0.6028  acc: 0.9614
+  [200/391] loss: 0.6041  acc: 0.9614
+  [300/391] loss: 0.6059  acc: 0.9614
+  Train loss: 0.6054  acc: 0.9612
+  Val   loss: 0.3955  acc: 0.8941
+
+[MobileNet/modified_kd] Epoch 41/50
+  [100/391] loss: 0.5996  acc: 0.9630
+  [200/391] loss: 0.6012  acc: 0.9626
+  [300/391] loss: 0.6029  acc: 0.9625
+  Train loss: 0.6031  acc: 0.9627
+  Val   loss: 0.3954  acc: 0.8955
+
+[MobileNet/modified_kd] Epoch 42/50
+  [100/391] loss: 0.6046  acc: 0.9620
+  [200/391] loss: 0.6040  acc: 0.9612
+  [300/391] loss: 0.6028  acc: 0.9618
+  Train loss: 0.6042  acc: 0.9613
+  Val   loss: 0.3937  acc: 0.8947
+
+[MobileNet/modified_kd] Epoch 43/50
+  [100/391] loss: 0.6047  acc: 0.9604
+  [200/391] loss: 0.6051  acc: 0.9611
+  [300/391] loss: 0.6035  acc: 0.9620
+  Train loss: 0.6037  acc: 0.9621
+  Val   loss: 0.3935  acc: 0.8960
+
+[MobileNet/modified_kd] Epoch 44/50
+  [100/391] loss: 0.6014  acc: 0.9638
+  [200/391] loss: 0.6010  acc: 0.9637
+  [300/391] loss: 0.6001  acc: 0.9643
+  Train loss: 0.6015  acc: 0.9637
+  Val   loss: 0.3987  acc: 0.8946
+
+[MobileNet/modified_kd] Epoch 45/50
+  [100/391] loss: 0.6067  acc: 0.9595
+  [200/391] loss: 0.6018  acc: 0.9621
+  [300/391] loss: 0.6013  acc: 0.9626
+  Train loss: 0.6006  acc: 0.9633
+  Val   loss: 0.3944  acc: 0.8966
+
+[MobileNet/modified_kd] Epoch 46/50
+  [100/391] loss: 0.6079  acc: 0.9602
+  [200/391] loss: 0.6040  acc: 0.9621
+  [300/391] loss: 0.6019  acc: 0.9635
+  Train loss: 0.6022  acc: 0.9635
+  Val   loss: 0.3982  acc: 0.8937
+  Early stopping at epoch 46
+[MobileNet/modified_kd] Best val accuracy: 0.8968
+
+=== Test Results [SimpleCNN] ===
+Overall accuracy: 0.7432  (7432/10000)
+
+  Class 0: 0.8000  (800/1000)
+  Class 1: 0.8710  (871/1000)
+  Class 2: 0.6310  (631/1000)
+  Class 3: 0.5190  (519/1000)
+  Class 4: 0.6550  (655/1000)
+  Class 5: 0.6860  (686/1000)
+  Class 6: 0.8390  (839/1000)
+  Class 7: 0.7970  (797/1000)
+  Class 8: 0.8390  (839/1000)
+  Class 9: 0.7950  (795/1000)
+
+=== Test Results [ResNet_no_ls] ===
+Overall accuracy: 0.9238  (9238/10000)
+
+  Class 0: 0.9300  (930/1000)
+  Class 1: 0.9700  (970/1000)
+  Class 2: 0.8870  (887/1000)
+  Class 3: 0.8350  (835/1000)
+  Class 4: 0.9330  (933/1000)
+  Class 5: 0.8780  (878/1000)
+  Class 6: 0.9490  (949/1000)
+  Class 7: 0.9480  (948/1000)
+  Class 8: 0.9570  (957/1000)
+  Class 9: 0.9510  (951/1000)
+
+=== Test Results [ResNet_ls] ===
+Overall accuracy: 0.9271  (9271/10000)
+
+  Class 0: 0.9510  (951/1000)
+  Class 1: 0.9670  (967/1000)
+  Class 2: 0.8980  (898/1000)
+  Class 3: 0.8580  (858/1000)
+  Class 4: 0.9280  (928/1000)
+  Class 5: 0.8770  (877/1000)
+  Class 6: 0.9450  (945/1000)
+  Class 7: 0.9470  (947/1000)
+  Class 8: 0.9500  (950/1000)
+  Class 9: 0.9500  (950/1000)
+
+=== Test Results [SimpleCNN_KD] ===
+Overall accuracy: 0.7225  (7225/10000)
+
+  Class 0: 0.7570  (757/1000)
+  Class 1: 0.8690  (869/1000)
+  Class 2: 0.6070  (607/1000)
+  Class 3: 0.4820  (482/1000)
+  Class 4: 0.6460  (646/1000)
+  Class 5: 0.6670  (667/1000)
+  Class 6: 0.8330  (833/1000)
+  Class 7: 0.7950  (795/1000)
+  Class 8: 0.7970  (797/1000)
+  Class 9: 0.7720  (772/1000)
+
+=== Test Results [MobileNet_KD] ===
+Overall accuracy: 0.8968  (8968/10000)
+
+  Class 0: 0.9170  (917/1000)
+  Class 1: 0.9580  (958/1000)
+  Class 2: 0.8600  (860/1000)
+  Class 3: 0.7940  (794/1000)
+  Class 4: 0.8950  (895/1000)
+  Class 5: 0.8220  (822/1000)
+  Class 6: 0.9300  (930/1000)
+  Class 7: 0.9070  (907/1000)
+  Class 8: 0.9420  (942/1000)
+  Class 9: 0.9430  (943/1000)
+
+============================================================
+PART_B — Accuracy Comparison
+  Model                Best Val Acc
+------------------------------------------------------------
+  SimpleCNN                  0.7432
+  ResNet_no_ls               0.9238
+  ResNet_ls                  0.9271
+  SimpleCNN_KD               0.7225
+  MobileNet_KD               0.8968
+============================================================
+
+============================================================
+PART_B — FLOPs Comparison
+  Model                           MACs
+------------------------------------------------------------
+  ResNet                   557,224,970
+  SimpleCNN_KD               6,276,618
+  MobileNet_KD              96,160,266
+============================================================
+Done: Sat Mar 21 15:09:14 +03 2026

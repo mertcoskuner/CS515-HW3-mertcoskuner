@@ -1,0 +1,25 @@
+======================================
+Job ID     : 1124563
+Array Task : 2
+Args       : --hw_part PART_B --results_dir results --plots_dir plots --data_dir ./data
+Host       : cn14
+Date       : Mon Mar 23 09:52:22 +03 2026
+======================================
+
+=== Part B Plots ===
+  Saved -> plots/partb/partb_baseline_curves.png
+  Saved -> plots/partb/partb_kd_curves.png
+  Saved -> plots/partb/partb_accuracy_comparison.png
+  Saved -> plots/partb/partb_label_smoothing.png
+  Saved -> plots/partb/partb_flops_vs_accuracy.png
+  Saved -> plots/partb/partb_flops_bar.png
+
+--- Part B Confusion Matrices ---
+  Saved -> plots/partb/partb_confusion_simplecnn.png
+  Saved -> plots/partb/partb_confusion_resnet_no_ls.png
+  Saved -> plots/partb/partb_confusion_resnet_ls.png
+  Saved -> plots/partb/partb_confusion_simplecnn_kd.png
+  Saved -> plots/partb/partb_confusion_mobilenet.png
+
+Done.
+Done: Mon Mar 23 09:57:45 +03 2026

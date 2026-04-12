@@ -1,0 +1,18 @@
+======================================
+Job ID     : 1124564
+Array Task : 1
+Args       : --hw_part PART_A --results_dir results --plots_dir plots --data_dir ./data
+Host       : cn14
+Date       : Mon Mar 23 09:52:22 +03 2026
+======================================
+
+=== Part A Plots ===
+  Saved -> plots/parta/parta_training_curves.png
+  Saved -> plots/parta/parta_accuracy_comparison.png
+
+--- Part A Confusion Matrices ---
+  Saved -> plots/parta/parta_confusion_resize.png
+  Saved -> plots/parta/parta_confusion_modify.png
+
+Done.
+Done: Mon Mar 23 09:56:22 +03 2026

@@ -1,0 +1,350 @@
+======================================
+Job ID  : 1124369
+Host    : cn14
+GPU     : NVIDIA RTX A4000
+Date    : Sat Mar 21 14:16:35 +03 2026
+======================================
+[PART_A/resize] Using device: cuda
+
+[PART_A/resize] Epoch 1/20
+  [100/391] loss: 1.4687  acc: 0.5282
+  [200/391] loss: 1.2059  acc: 0.6184
+  [300/391] loss: 1.0804  acc: 0.6556
+  Train loss: 1.0120  acc: 0.6748
+  Val   loss: 0.7205  acc: 0.7596
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7596)
+
+[PART_A/resize] Epoch 2/20
+  [100/391] loss: 0.7493  acc: 0.7479
+  [200/391] loss: 0.7503  acc: 0.7461
+  [300/391] loss: 0.7451  acc: 0.7462
+  Train loss: 0.7366  acc: 0.7489
+  Val   loss: 0.6830  acc: 0.7714
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7714)
+
+[PART_A/resize] Epoch 3/20
+  [100/391] loss: 0.6955  acc: 0.7649
+  [200/391] loss: 0.7056  acc: 0.7598
+  [300/391] loss: 0.6968  acc: 0.7611
+  Train loss: 0.6958  acc: 0.7600
+  Val   loss: 0.6514  acc: 0.7816
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7816)
+
+[PART_A/resize] Epoch 4/20
+  [100/391] loss: 0.6866  acc: 0.7638
+  [200/391] loss: 0.6772  acc: 0.7667
+  [300/391] loss: 0.6761  acc: 0.7675
+  Train loss: 0.6767  acc: 0.7668
+  Val   loss: 0.6438  acc: 0.7836
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7836)
+
+[PART_A/resize] Epoch 5/20
+  [100/391] loss: 0.6688  acc: 0.7673
+  [200/391] loss: 0.6665  acc: 0.7693
+  [300/391] loss: 0.6684  acc: 0.7696
+  Train loss: 0.6674  acc: 0.7699
+  Val   loss: 0.6351  acc: 0.7835
+
+[PART_A/resize] Epoch 6/20
+  [100/391] loss: 0.6523  acc: 0.7742
+  [200/391] loss: 0.6541  acc: 0.7729
+  [300/391] loss: 0.6519  acc: 0.7739
+  Train loss: 0.6488  acc: 0.7756
+  Val   loss: 0.6187  acc: 0.7906
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7906)
+
+[PART_A/resize] Epoch 7/20
+  [100/391] loss: 0.6535  acc: 0.7723
+  [200/391] loss: 0.6502  acc: 0.7745
+  [300/391] loss: 0.6500  acc: 0.7745
+  Train loss: 0.6493  acc: 0.7741
+  Val   loss: 0.6285  acc: 0.7865
+
+[PART_A/resize] Epoch 8/20
+  [100/391] loss: 0.6373  acc: 0.7770
+  [200/391] loss: 0.6428  acc: 0.7775
+  [300/391] loss: 0.6424  acc: 0.7778
+  Train loss: 0.6418  acc: 0.7785
+  Val   loss: 0.6132  acc: 0.7918
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7918)
+
+[PART_A/resize] Epoch 9/20
+  [100/391] loss: 0.6472  acc: 0.7737
+  [200/391] loss: 0.6432  acc: 0.7773
+  [300/391] loss: 0.6411  acc: 0.7767
+  Train loss: 0.6419  acc: 0.7769
+  Val   loss: 0.6109  acc: 0.7930
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7930)
+
+[PART_A/resize] Epoch 10/20
+  [100/391] loss: 0.6350  acc: 0.7793
+  [200/391] loss: 0.6358  acc: 0.7797
+  [300/391] loss: 0.6359  acc: 0.7794
+  Train loss: 0.6369  acc: 0.7789
+  Val   loss: 0.6115  acc: 0.7926
+
+[PART_A/resize] Epoch 11/20
+  [100/391] loss: 0.6359  acc: 0.7790
+  [200/391] loss: 0.6317  acc: 0.7800
+  [300/391] loss: 0.6318  acc: 0.7803
+  Train loss: 0.6346  acc: 0.7796
+  Val   loss: 0.5999  acc: 0.7979
+  Saved best model → results/parta/best_model_parta_resize.pth  (val_acc=0.7979)
+
+[PART_A/resize] Epoch 12/20
+  [100/391] loss: 0.6239  acc: 0.7814
+  [200/391] loss: 0.6239  acc: 0.7831
+  [300/391] loss: 0.6236  acc: 0.7838
+  Train loss: 0.6255  acc: 0.7827
+  Val   loss: 0.6144  acc: 0.7916
+
+[PART_A/resize] Epoch 13/20
+  [100/391] loss: 0.6247  acc: 0.7852
+  [200/391] loss: 0.6242  acc: 0.7850
+  [300/391] loss: 0.6260  acc: 0.7836
+  Train loss: 0.6298  acc: 0.7823
+  Val   loss: 0.6115  acc: 0.7930
+
+[PART_A/resize] Epoch 14/20
+  [100/391] loss: 0.6172  acc: 0.7828
+  [200/391] loss: 0.6269  acc: 0.7825
+  [300/391] loss: 0.6270  acc: 0.7836
+  Train loss: 0.6268  acc: 0.7833
+  Val   loss: 0.6036  acc: 0.7950
+
+[PART_A/resize] Epoch 15/20
+  [100/391] loss: 0.6157  acc: 0.7853
+  [200/391] loss: 0.6221  acc: 0.7837
+  [300/391] loss: 0.6263  acc: 0.7809
+  Train loss: 0.6271  acc: 0.7806
+  Val   loss: 0.6029  acc: 0.7933
+
+[PART_A/resize] Epoch 16/20
+  [100/391] loss: 0.6276  acc: 0.7815
+  [200/391] loss: 0.6251  acc: 0.7841
+  [300/391] loss: 0.6238  acc: 0.7842
+  Train loss: 0.6265  acc: 0.7824
+  Val   loss: 0.6049  acc: 0.7933
+
+[PART_A/resize] Epoch 17/20
+  [100/391] loss: 0.6191  acc: 0.7873
+  [200/391] loss: 0.6187  acc: 0.7866
+  [300/391] loss: 0.6217  acc: 0.7852
+  Train loss: 0.6253  acc: 0.7829
+  Val   loss: 0.6124  acc: 0.7924
+
+[PART_A/resize] Epoch 18/20
+  [100/391] loss: 0.6273  acc: 0.7842
+  [200/391] loss: 0.6257  acc: 0.7850
+  [300/391] loss: 0.6203  acc: 0.7858
+  Train loss: 0.6218  acc: 0.7844
+  Val   loss: 0.5991  acc: 0.7946
+
+[PART_A/resize] Epoch 19/20
+  [100/391] loss: 0.6164  acc: 0.7881
+  [200/391] loss: 0.6190  acc: 0.7870
+  [300/391] loss: 0.6249  acc: 0.7850
+  Train loss: 0.6267  acc: 0.7837
+  Val   loss: 0.6078  acc: 0.7939
+
+[PART_A/resize] Epoch 20/20
+  [100/391] loss: 0.6207  acc: 0.7863
+  [200/391] loss: 0.6219  acc: 0.7855
+  [300/391] loss: 0.6213  acc: 0.7855
+  Train loss: 0.6230  acc: 0.7843
+  Val   loss: 0.6059  acc: 0.7935
+[PART_A/resize] Results saved → results/parta/best_model_parta_resize_results.json
+[PART_A/resize] Best val accuracy: 0.7979
+[PART_A/modify] Using device: cuda
+
+[PART_A/modify] Epoch 1/20
+  [100/391] loss: 1.1661  acc: 0.5964
+  [200/391] loss: 0.9722  acc: 0.6623
+  [300/391] loss: 0.8622  acc: 0.7015
+  Train loss: 0.7994  acc: 0.7234
+  Val   loss: 0.6513  acc: 0.7824
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.7824)
+
+[PART_A/modify] Epoch 2/20
+  [100/391] loss: 0.5152  acc: 0.8253
+  [200/391] loss: 0.5086  acc: 0.8251
+  [300/391] loss: 0.4984  acc: 0.8300
+  Train loss: 0.4870  acc: 0.8343
+  Val   loss: 0.4674  acc: 0.8421
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.8421)
+
+[PART_A/modify] Epoch 3/20
+  [100/391] loss: 0.4010  acc: 0.8623
+  [200/391] loss: 0.4009  acc: 0.8624
+  [300/391] loss: 0.4016  acc: 0.8629
+  Train loss: 0.4000  acc: 0.8629
+  Val   loss: 0.4573  acc: 0.8492
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.8492)
+
+[PART_A/modify] Epoch 4/20
+  [100/391] loss: 0.3398  acc: 0.8852
+  [200/391] loss: 0.3477  acc: 0.8815
+  [300/391] loss: 0.3493  acc: 0.8810
+  Train loss: 0.3527  acc: 0.8804
+  Val   loss: 0.3841  acc: 0.8684
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.8684)
+
+[PART_A/modify] Epoch 5/20
+  [100/391] loss: 0.3206  acc: 0.8908
+  [200/391] loss: 0.3136  acc: 0.8932
+  [300/391] loss: 0.3172  acc: 0.8928
+  Train loss: 0.3164  acc: 0.8930
+  Val   loss: 0.4020  acc: 0.8670
+
+[PART_A/modify] Epoch 6/20
+  [100/391] loss: 0.2323  acc: 0.9210
+  [200/391] loss: 0.2230  acc: 0.9247
+  [300/391] loss: 0.2208  acc: 0.9250
+  Train loss: 0.2165  acc: 0.9262
+  Val   loss: 0.2802  acc: 0.9057
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9057)
+
+[PART_A/modify] Epoch 7/20
+  [100/391] loss: 0.1870  acc: 0.9357
+  [200/391] loss: 0.1883  acc: 0.9357
+  [300/391] loss: 0.1902  acc: 0.9349
+  Train loss: 0.1917  acc: 0.9341
+  Val   loss: 0.2629  acc: 0.9134
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9134)
+
+[PART_A/modify] Epoch 8/20
+  [100/391] loss: 0.1697  acc: 0.9425
+  [200/391] loss: 0.1794  acc: 0.9390
+  [300/391] loss: 0.1806  acc: 0.9391
+  Train loss: 0.1828  acc: 0.9381
+  Val   loss: 0.2778  acc: 0.9080
+
+[PART_A/modify] Epoch 9/20
+  [100/391] loss: 0.1579  acc: 0.9466
+  [200/391] loss: 0.1648  acc: 0.9432
+  [300/391] loss: 0.1666  acc: 0.9426
+  Train loss: 0.1692  acc: 0.9417
+  Val   loss: 0.2949  acc: 0.9050
+
+[PART_A/modify] Epoch 10/20
+  [100/391] loss: 0.1543  acc: 0.9486
+  [200/391] loss: 0.1612  acc: 0.9468
+  [300/391] loss: 0.1648  acc: 0.9449
+  Train loss: 0.1664  acc: 0.9439
+  Val   loss: 0.2888  acc: 0.9090
+
+[PART_A/modify] Epoch 11/20
+  [100/391] loss: 0.1076  acc: 0.9631
+  [200/391] loss: 0.1042  acc: 0.9644
+  [300/391] loss: 0.1042  acc: 0.9648
+  Train loss: 0.1041  acc: 0.9645
+  Val   loss: 0.2337  acc: 0.9280
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9280)
+
+[PART_A/modify] Epoch 12/20
+  [100/391] loss: 0.0789  acc: 0.9734
+  [200/391] loss: 0.0839  acc: 0.9713
+  [300/391] loss: 0.0851  acc: 0.9712
+  Train loss: 0.0874  acc: 0.9705
+  Val   loss: 0.2337  acc: 0.9288
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9288)
+
+[PART_A/modify] Epoch 13/20
+  [100/391] loss: 0.0792  acc: 0.9726
+  [200/391] loss: 0.0767  acc: 0.9733
+  [300/391] loss: 0.0787  acc: 0.9730
+  Train loss: 0.0802  acc: 0.9728
+  Val   loss: 0.2463  acc: 0.9292
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9292)
+
+[PART_A/modify] Epoch 14/20
+  [100/391] loss: 0.0665  acc: 0.9784
+  [200/391] loss: 0.0732  acc: 0.9756
+  [300/391] loss: 0.0747  acc: 0.9750
+  Train loss: 0.0763  acc: 0.9743
+  Val   loss: 0.2409  acc: 0.9305
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9305)
+
+[PART_A/modify] Epoch 15/20
+  [100/391] loss: 0.0679  acc: 0.9764
+  [200/391] loss: 0.0696  acc: 0.9758
+  [300/391] loss: 0.0696  acc: 0.9758
+  Train loss: 0.0729  acc: 0.9747
+  Val   loss: 0.2523  acc: 0.9314
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9314)
+
+[PART_A/modify] Epoch 16/20
+  [100/391] loss: 0.0557  acc: 0.9813
+  [200/391] loss: 0.0513  acc: 0.9832
+  [300/391] loss: 0.0498  acc: 0.9838
+  Train loss: 0.0482  acc: 0.9843
+  Val   loss: 0.2190  acc: 0.9374
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9374)
+
+[PART_A/modify] Epoch 17/20
+  [100/391] loss: 0.0349  acc: 0.9881
+  [200/391] loss: 0.0374  acc: 0.9877
+  [300/391] loss: 0.0375  acc: 0.9877
+  Train loss: 0.0367  acc: 0.9880
+  Val   loss: 0.2247  acc: 0.9374
+
+[PART_A/modify] Epoch 18/20
+  [100/391] loss: 0.0286  acc: 0.9910
+  [200/391] loss: 0.0295  acc: 0.9900
+  [300/391] loss: 0.0317  acc: 0.9891
+  Train loss: 0.0323  acc: 0.9891
+  Val   loss: 0.2388  acc: 0.9367
+
+[PART_A/modify] Epoch 19/20
+  [100/391] loss: 0.0297  acc: 0.9892
+  [200/391] loss: 0.0281  acc: 0.9900
+  [300/391] loss: 0.0286  acc: 0.9901
+  Train loss: 0.0298  acc: 0.9897
+  Val   loss: 0.2386  acc: 0.9393
+  Saved best model → results/parta/best_model_parta_modify.pth  (val_acc=0.9393)
+
+[PART_A/modify] Epoch 20/20
+  [100/391] loss: 0.0254  acc: 0.9916
+  [200/391] loss: 0.0253  acc: 0.9914
+  [300/391] loss: 0.0276  acc: 0.9903
+  Train loss: 0.0293  acc: 0.9899
+  Val   loss: 0.2448  acc: 0.9359
+[PART_A/modify] Results saved → results/parta/best_model_parta_modify_results.json
+[PART_A/modify] Best val accuracy: 0.9393
+
+=== Test Results [PART_A/resize] ===
+Overall accuracy: 0.7979  (7979/10000)
+
+  Class 0: 0.8270  (827/1000)
+  Class 1: 0.8860  (886/1000)
+  Class 2: 0.6910  (691/1000)
+  Class 3: 0.6270  (627/1000)
+  Class 4: 0.7550  (755/1000)
+  Class 5: 0.6730  (673/1000)
+  Class 6: 0.8960  (896/1000)
+  Class 7: 0.8440  (844/1000)
+  Class 8: 0.8860  (886/1000)
+  Class 9: 0.8940  (894/1000)
+
+=== Test Results [PART_A/modify] ===
+Overall accuracy: 0.9393  (9393/10000)
+
+  Class 0: 0.9620  (962/1000)
+  Class 1: 0.9720  (972/1000)
+  Class 2: 0.9040  (904/1000)
+  Class 3: 0.8800  (880/1000)
+  Class 4: 0.9360  (936/1000)
+  Class 5: 0.8940  (894/1000)
+  Class 6: 0.9690  (969/1000)
+  Class 7: 0.9590  (959/1000)
+  Class 8: 0.9640  (964/1000)
+  Class 9: 0.9530  (953/1000)
+
+=============================================
+PART_A — Option Comparison
+  Option     Best Val Acc
+---------------------------------------------
+  resize           0.7979
+  modify           0.9393
+=============================================
+Done: Sat Mar 21 14:52:08 +03 2026

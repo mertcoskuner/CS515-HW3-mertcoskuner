@@ -1,0 +1,13 @@
+# ============================================================
+# CNN on CIFAR-10 — HW2 Visualization Task List
+# Each line is passed directly to:  python -u visualize.py $ARGS
+# Plots are saved under plots/parta/ or plots/partb/
+# Array index 1 → PART_A plots
+# Array index 2 → PART_B plots
+# ============================================================
+
+# --- PART_A: Transfer Learning plots ------------------------
+--hw_part PART_A --results_dir results --plots_dir plots --data_dir ./data
+
+# --- PART_B: Knowledge Distillation plots -------------------
+--hw_part PART_B --results_dir results --plots_dir plots --data_dir ./data
