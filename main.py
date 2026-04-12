@@ -184,9 +184,9 @@ def main() -> None:
             lambda_jsd      = args.lambda_jsd,
         )
 
-        def _load_original_models():
-            """Load PART_A and PART_B original (non-AugMix) models."""
-            orig = {}
+        def _load_parta_models():
+            """Load original PART_A fine-tuned models (resize + modify)."""
+            parta = {}
             for option in ["resize", "modify"]:
                 option_params = replace(
                     model_params,
@@ -195,34 +195,12 @@ def main() -> None:
                 )
                 m = build_parta_model(option_params, device)
                 m.load_state_dict(torch.load(f"{parta_stem}_parta_{option}{parta_ext}", map_location=device))
-                orig[f"PART_A/{option}"] = (m, option_params.input_size)
+                parta[f"PART_A/{option}"] = (m, option_params.input_size)
+            return parta
 
-            simplecnn = build_model(simplecnn_params).to(device)
-            simplecnn.load_state_dict(torch.load(f"{partb_stem}_simplecnn{partb_ext}", map_location=device))
-            orig["SimpleCNN"] = (simplecnn, 32)
-
-            resnet_no_ls = build_model(resnet_params).to(device)
-            resnet_no_ls.load_state_dict(torch.load(f"{partb_stem}_resnet{partb_ext}", map_location=device))
-            orig["ResNet_no_ls"] = (resnet_no_ls, 32)
-
-            resnet_ls = build_model(resnet_params).to(device)
-            resnet_ls.load_state_dict(torch.load(f"{partb_stem}_resnet{ls_tag}{partb_ext}", map_location=device))
-            orig["ResNet_ls"] = (resnet_ls, 32)
-
-            simplecnn_kd = build_model(simplecnn_params).to(device)
-            simplecnn_kd.load_state_dict(torch.load(f"{partb_stem}_simplecnn_kd{partb_ext}", map_location=device))
-            orig["SimpleCNN_KD"] = (simplecnn_kd, 32)
-
-            mobilenet = build_model(mobilenet_params).to(device)
-            mobilenet.load_state_dict(torch.load(f"{partb_stem}_mobilenet_modified_kd{partb_ext}", map_location=device))
-            orig["MobileNet_KD"] = (mobilenet, 32)
-            return orig
-
-        def _load_augmix_models():
-            """Load AugMix-retrained PART_A and PART_B models from saved checkpoints."""
-            am = {}
-
-            # PART_A
+        def _load_augmix_parta_models():
+            """Load PART_A models re-fine-tuned with AugMix."""
+            parta_am = {}
             for option in ["resize", "modify"]:
                 option_params = replace(
                     model_params,
@@ -231,21 +209,27 @@ def main() -> None:
                 )
                 m = build_parta_model(option_params, device)
                 m.load_state_dict(torch.load(f"{stem}_parta_{option}_augmix{ext}", map_location=device))
-                am[f"PART_A/{option}_AugMix"] = (m, option_params.input_size)
+                parta_am[f"PART_A/{option}_AugMix"] = (m, option_params.input_size)
+            return parta_am
 
-            # PART_B
-            simplecnn_am = build_model(simplecnn_params).to(device)
-            simplecnn_am.load_state_dict(torch.load(f"{stem}_simplecnn_augmix{ext}", map_location=device))
-            am["SimpleCNN_AugMix"] = (simplecnn_am, 32)
-
+        def _load_augmix_resnet():
+            """Load AugMix-trained ResNet models (used as teacher in Steps 4/5)."""
             resnet_no_ls_am = build_model(resnet_params).to(device)
             resnet_no_ls_am.load_state_dict(torch.load(f"{stem}_resnet_augmix{ext}", map_location=device))
-            am["ResNet_no_ls_AugMix"] = (resnet_no_ls_am, 32)
-
             resnet_ls_am = build_model(resnet_params).to(device)
             resnet_ls_am.load_state_dict(torch.load(f"{stem}_resnet{ls_tag}_augmix{ext}", map_location=device))
-            am["ResNet_ls_AugMix"] = (resnet_ls_am, 32)
-            return am
+            return resnet_no_ls_am, resnet_ls_am
+
+        def _load_original_kd_models():
+            """Load original KD student models from PART_B."""
+            kd = {}
+            simplecnn_kd = build_model(simplecnn_params).to(device)
+            simplecnn_kd.load_state_dict(torch.load(f"{partb_stem}_simplecnn_kd{partb_ext}", map_location=device))
+            kd["SimpleCNN_KD"] = (simplecnn_kd, 32)
+            mobilenet = build_model(mobilenet_params).to(device)
+            mobilenet.load_state_dict(torch.load(f"{partb_stem}_mobilenet_modified_kd{partb_ext}", map_location=device))
+            kd["MobileNet_KD"] = (mobilenet, 32)
+            return kd
 
         def _load_augmix_kd_models():
             """Load AugMix-teacher KD student models from saved checkpoints."""
@@ -296,19 +280,19 @@ def main() -> None:
                 print(row)
             print("=" * 85)
 
-        # ── STEP 1: evaluate original models (mode=test or mode=both) ─────────
+        # ── STEP 1: evaluate original PART_A fine-tuned models ───────────────────
         if args.mode in ("test", "both"):
-            print("\n[PART_C — Step 1] Evaluating original models on clean + CIFAR-10-C ...")
-            orig_summary = _evaluate(_load_original_models())
-            _print_summary(orig_summary, "PART_C Step 1 — Original Models: Clean vs. Corrupted")
+            print("\n[PART_C — Step 1] Evaluating original fine-tuned models on clean + CIFAR-10-C ...")
+            orig_summary = _evaluate(_load_parta_models())
+            _print_summary(orig_summary, "PART_C Step 1 — Original Fine-tuned Models: Clean vs. Corrupted")
 
-        # ── STEP 2 training: re-train PART_A + PART_B with AugMix ───────────────
+        # ── STEP 2 training: re-fine-tune PART_A + ResNet with AugMix ────────────
         if args.mode in ("train", "both"):
-            print("\n[PART_C — Step 2] Re-training PART_A + PART_B models with AugMix ...")
+            print("\n[PART_C — Step 2] Re-training PART_A + ResNet with AugMix ...")
 
             resnet_no_ls_training = replace(model_training_params, label_smoothing=0.0)
 
-            # PART_A
+            # PART_A (both options)
             for option in ["resize", "modify"]:
                 option_params = replace(
                     model_params,
@@ -323,12 +307,7 @@ def main() -> None:
                     save_tag=f"parta_{option}",
                 )
 
-            # PART_B
-            simplecnn_am = build_model(simplecnn_params).to(device)
-            simplecnn_am, _ = run_augmix_training(
-                simplecnn_am, simplecnn_params, model_training_params, data_params, **augmix_kwargs,
-            )
-
+            # ResNet (teacher for Step 4)
             resnet_no_ls_am = build_model(resnet_params).to(device)
             resnet_no_ls_am, res_no_ls_am = run_augmix_training(
                 resnet_no_ls_am, resnet_params, resnet_no_ls_training, data_params, **augmix_kwargs,
@@ -339,18 +318,18 @@ def main() -> None:
                 resnet_ls_am, resnet_params, model_training_params, data_params, **augmix_kwargs,
             )
 
-        # ── STEP 2 evaluation: evaluate AugMix models (mode=train or both) ─────
+        # ── STEP 2 evaluation: evaluate AugMix PART_A models ─────────────────────
         if args.mode in ("train", "both"):
-            print("\n[PART_C — Step 2] Evaluating AugMix models on clean + CIFAR-10-C ...")
-            am_summary = _evaluate(_load_augmix_models())
-            _print_summary(am_summary, "PART_C Step 2 — AugMix Models: Clean vs. Corrupted")
+            print("\n[PART_C — Step 2] Evaluating AugMix fine-tuned models on clean + CIFAR-10-C ...")
+            am_summary = _evaluate(_load_augmix_parta_models())
+            _print_summary(am_summary, "PART_C Step 2 — AugMix Fine-tuned Models: Clean vs. Corrupted")
 
         # ── STEP 3: PGD adversarial robustness + GradCAM + t-SNE ──────────────
         if args.mode in ("test", "both"):
             print("\n[PART_C — Step 3] Adversarial robustness evaluation (PGD-20) ...")
 
-            # Models to probe: original + AugMix (PART_A + PART_B)
-            all_models = {**_load_original_models(), **_load_augmix_models()}
+            # Both fine-tuned models: original PART_A + AugMix PART_A
+            all_models = {**_load_parta_models(), **_load_augmix_parta_models()}
 
             adv_summary = {}
             viz_done    = False   # GradCAM + t-SNE only for the first model with samples
@@ -419,42 +398,45 @@ def main() -> None:
                 modified_kd=True, save_tag="mobilenet_augmix",
             )
 
-            orig_kd_models = {k: v for k, v in _load_original_models().items() if "KD" in k}
-            kd_comparison = {**_evaluate(orig_kd_models), **_evaluate(_load_augmix_kd_models())}
+            kd_comparison = {**_evaluate(_load_original_kd_models()), **_evaluate(_load_augmix_kd_models())}
             _print_summary(kd_comparison, "PART_C Step 4 — KD: Original Teacher vs. AugMix Teacher")
 
         # ── STEP 4: evaluate only (test mode) ─────────────────────────────────
         if args.mode == "test":
             print("\n[PART_C — Step 4] Evaluating KD models: original teacher vs. AugMix teacher ...")
-            orig_kd_models = {k: v for k, v in _load_original_models().items() if "KD" in k}
-            kd_comparison = {**_evaluate(orig_kd_models), **_evaluate(_load_augmix_kd_models())}
+            kd_comparison = {**_evaluate(_load_original_kd_models()), **_evaluate(_load_augmix_kd_models())}
             _print_summary(kd_comparison, "PART_C Step 4 — KD: Original Teacher vs. AugMix Teacher")
 
         # ── STEP 5: Adversarial transferability (test and both modes) ─────────
         if args.mode in ("test", "both"):
             print("\n[PART_C — Step 5] Adversarial transferability: teacher → student ...")
 
-            orig_models  = _load_original_models()
-            am_models    = _load_augmix_models()
-            am_kd_models = _load_augmix_kd_models()
+            orig_kd  = _load_original_kd_models()
+            am_kd    = _load_augmix_kd_models()
+
+            # Original PART_B teacher (ResNet_ls)
+            resnet_ls_orig = build_model(resnet_params).to(device)
+            resnet_ls_orig.load_state_dict(
+                torch.load(f"{partb_stem}_resnet{ls_tag}{partb_ext}", map_location=device)
+            )
+
+            # AugMix teacher (best of ls / no_ls)
+            _, resnet_ls_am = _load_augmix_resnet()
 
             pairs = [
-                # (teacher_key, teacher_dict, student_key, student_dict)
-                ("ResNet_ls",        orig_models, "SimpleCNN_KD",        orig_models),
-                ("ResNet_ls",        orig_models, "MobileNet_KD",        orig_models),
-                ("ResNet_ls_AugMix", am_models,   "SimpleCNN_AugMix_KD", am_kd_models),
-                ("ResNet_ls_AugMix", am_models,   "MobileNet_AugMix_KD", am_kd_models),
+                ("ResNet_ls",        resnet_ls_orig,  "SimpleCNN_KD",        orig_kd["SimpleCNN_KD"][0]),
+                ("ResNet_ls",        resnet_ls_orig,  "MobileNet_KD",        orig_kd["MobileNet_KD"][0]),
+                ("ResNet_ls_AugMix", resnet_ls_am,    "SimpleCNN_AugMix_KD", am_kd["SimpleCNN_AugMix_KD"][0]),
+                ("ResNet_ls_AugMix", resnet_ls_am,    "MobileNet_AugMix_KD", am_kd["MobileNet_AugMix_KD"][0]),
             ]
 
             transfer_results = {}
-            for src_key, src_dict, tgt_key, tgt_dict in pairs:
-                src_model, _ = src_dict[src_key]
-                tgt_model, _ = tgt_dict[tgt_key]
+            for src_name, src_model, tgt_name, tgt_model in pairs:
                 res = run_transfer_test(
                     src_model, tgt_model, data_params, model_training_params, device,
-                    source_name=src_key, target_name=tgt_key,
+                    source_name=src_name, target_name=tgt_name,
                 )
-                transfer_results[f"{src_key} → {tgt_key}"] = res
+                transfer_results[f"{src_name} → {tgt_name}"] = res
 
             print("\n" + "=" * 90)
             print("PART_C Step 5 — Adversarial Transferability (PGD-20 L∞ ε=4/255)")
