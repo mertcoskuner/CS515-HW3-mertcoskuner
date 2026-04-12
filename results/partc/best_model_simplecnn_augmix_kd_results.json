@@ -1,0 +1,114 @@
+{
+  "model": "SimpleCNN",
+  "kd_type": "kd",
+  "best_val_acc": 0.7233,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.5515,
+      "train_acc": 0.3195,
+      "val_loss": 1.5568,
+      "val_acc": 0.4574
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.1271,
+      "train_acc": 0.484,
+      "val_loss": 1.3639,
+      "val_acc": 0.537
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.0044,
+      "train_acc": 0.5469,
+      "val_loss": 1.2308,
+      "val_acc": 0.5984
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.9238,
+      "train_acc": 0.5859,
+      "val_loss": 1.176,
+      "val_acc": 0.6188
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.8707,
+      "train_acc": 0.6112,
+      "val_loss": 1.1062,
+      "val_acc": 0.6495
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.8145,
+      "train_acc": 0.6421,
+      "val_loss": 1.094,
+      "val_acc": 0.6593
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.7931,
+      "train_acc": 0.6506,
+      "val_loss": 1.0383,
+      "val_acc": 0.6804
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.7765,
+      "train_acc": 0.6591,
+      "val_loss": 1.0292,
+      "val_acc": 0.6771
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.7566,
+      "train_acc": 0.6686,
+      "val_loss": 1.002,
+      "val_acc": 0.6902
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.7466,
+      "train_acc": 0.6742,
+      "val_loss": 0.9892,
+      "val_acc": 0.6938
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.7207,
+      "train_acc": 0.6866,
+      "val_loss": 0.9448,
+      "val_acc": 0.7128
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.7142,
+      "train_acc": 0.6886,
+      "val_loss": 0.9452,
+      "val_acc": 0.7086
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.7077,
+      "train_acc": 0.6913,
+      "val_loss": 0.9454,
+      "val_acc": 0.712
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.7009,
+      "train_acc": 0.6942,
+      "val_loss": 0.9203,
+      "val_acc": 0.7233
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.6954,
+      "train_acc": 0.6985,
+      "val_loss": 0.9257,
+      "val_acc": 0.7167
+    }
+  ],
+  "temperature": 4.0,
+  "alpha": 0.5
+}

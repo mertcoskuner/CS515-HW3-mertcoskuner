@@ -199,18 +199,11 @@ def main() -> None:
             return parta
 
         def _load_augmix_parta_models():
-            """Load PART_A models re-fine-tuned with AugMix."""
-            parta_am = {}
-            for option in ["resize", "modify"]:
-                option_params = replace(
-                    model_params,
-                    option=option,
-                    input_size=224 if option == "resize" else 32,
-                )
-                m = build_parta_model(option_params, device)
-                m.load_state_dict(torch.load(f"{stem}_parta_{option}_augmix{ext}", map_location=device))
-                parta_am[f"PART_A/{option}_AugMix"] = (m, option_params.input_size)
-            return parta_am
+            """Load PART_A/modify model re-fine-tuned with AugMix."""
+            option_params = replace(model_params, option="modify", input_size=32)
+            m = build_parta_model(option_params, device)
+            m.load_state_dict(torch.load(f"{stem}_parta_modify_augmix{ext}", map_location=device))
+            return {"PART_A/modify_AugMix": (m, 32)}
 
         def _load_augmix_resnet():
             """Load AugMix-trained ResNet models (used as teacher in Steps 4/5)."""
@@ -292,20 +285,15 @@ def main() -> None:
 
             resnet_no_ls_training = replace(model_training_params, label_smoothing=0.0)
 
-            # PART_A (both options)
-            for option in ["resize", "modify"]:
-                option_params = replace(
-                    model_params,
-                    option=option,
-                    input_size=224 if option == "resize" else 32,
-                )
-                m = build_parta_model(option_params, device)
-                run_augmix_training(
-                    m, option_params, model_training_params, data_params,
-                    **augmix_kwargs,
-                    input_size=option_params.input_size,
-                    save_tag=f"parta_{option}",
-                )
+            # PART_A/modify only (32×32, better accuracy and feasible training time)
+            modify_params = replace(model_params, option="modify", input_size=32)
+            m = build_parta_model(modify_params, device)
+            run_augmix_training(
+                m, modify_params, model_training_params, data_params,
+                **augmix_kwargs,
+                input_size=32,
+                save_tag="parta_modify",
+            )
 
             # ResNet (teacher for Step 4)
             resnet_no_ls_am = build_model(resnet_params).to(device)
@@ -328,41 +316,40 @@ def main() -> None:
         if args.mode in ("test", "both"):
             print("\n[PART_C — Step 3] Adversarial robustness evaluation (PGD-20) ...")
 
-            # Both fine-tuned models: original PART_A + AugMix PART_A
-            all_models = {**_load_parta_models(), **_load_augmix_parta_models()}
+            # Both fine-tuned models: PART_A/modify original + PART_A/modify AugMix
+            parta_modify = {k: v for k, v in _load_parta_models().items() if "modify" in k}
+            all_models = {**parta_modify, **_load_augmix_parta_models()}
 
             adv_summary = {}
-            viz_done    = False   # GradCAM + t-SNE only for the first model with samples
+            os.makedirs("plots/partc", exist_ok=True)
 
             for name, (model, input_sz) in all_models.items():
-                need_samples = not viz_done
                 res = run_pgd_test(
                     model, data_params, model_training_params, device,
                     model_name=name, input_size=input_sz,
-                    collect_samples=need_samples,
+                    collect_samples=True,
                 )
                 adv_summary[name] = res
 
-                if need_samples and "samples" in res:
+                if "samples" in res:
                     clean_b, adv_linf_b, adv_l2_b, lbl_b = res["samples"]
-                    os.makedirs("plots/partc", exist_ok=True)
+                    tag = name.replace('/', '_')
 
                     # GradCAM — L∞ adversarial
                     visualize_gradcam_adversarial(
                         model, clean_b, adv_linf_b, lbl_b, device,
-                        save_path=f"plots/partc/gradcam_{name.replace('/', '_')}_linf.png",
+                        save_path=f"plots/partc/gradcam_{tag}_linf.png",
                     )
                     # GradCAM — L2 adversarial
                     visualize_gradcam_adversarial(
                         model, clean_b, adv_l2_b, lbl_b, device,
-                        save_path=f"plots/partc/gradcam_{name.replace('/', '_')}_l2.png",
+                        save_path=f"plots/partc/gradcam_{tag}_l2.png",
                     )
                     # t-SNE — L∞ adversarial
                     visualize_tsne(
                         model, clean_b, adv_linf_b, lbl_b, device,
-                        save_path=f"plots/partc/tsne_{name.replace('/', '_')}_linf.png",
+                        save_path=f"plots/partc/tsne_{tag}_linf.png",
                     )
-                    viz_done = True
 
             # PGD summary table
             print("\n" + "=" * 75)

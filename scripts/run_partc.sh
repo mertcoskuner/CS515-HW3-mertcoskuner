@@ -4,7 +4,7 @@
 #SBATCH --error=/cta/users/mert.coskuner/CS515-HW3-mertcoskuner/scripts/logs/%j_partc.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --time=16:00:00
 #SBATCH --partition=cuda
@@ -42,11 +42,11 @@ python -u main.py \
     --mode            both \
     --dataset         Cifar10 \
     --model           PartA \
-    --epochs          50 \
+    --epochs          15 \
     --lr              1e-3 \
     --weight_decay    1e-4 \
     --batch_size      128 \
-    --num_workers     4 \
+    --num_workers     8 \
     --log_interval    100 \
     --patience        10 \
     --label_smoothing 0.1 \

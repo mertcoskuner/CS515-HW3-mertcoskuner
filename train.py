@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from typing import Any, Dict, Tuple
 
-from augmix import AugMixDataset, jsd_loss
+from torch.utils.data import Dataset
 from params.model_params import PartAParams
 from params.model_training_params import ModelTrainingConfig
 from params.data_params import Cifar10Params
@@ -612,6 +612,23 @@ def run_pretrained_training(
     return model, results
 
 
+def _jsd_loss(
+    logits_clean: torch.Tensor,
+    logits_aug1: torch.Tensor,
+    logits_aug2: torch.Tensor,
+) -> torch.Tensor:
+    p_clean = F.softmax(logits_clean, dim=1)
+    p_aug1  = F.softmax(logits_aug1,  dim=1)
+    p_aug2  = F.softmax(logits_aug2,  dim=1)
+    p_mix   = ((p_clean + p_aug1 + p_aug2) / 3.0).clamp(1e-7, 1.0)
+    log_mix = p_mix.log()
+    return (
+        F.kl_div(log_mix, p_clean, reduction="batchmean") +
+        F.kl_div(log_mix, p_aug1,  reduction="batchmean") +
+        F.kl_div(log_mix, p_aug2,  reduction="batchmean")
+    ) / 3.0
+
+
 def train_one_epoch_augmix(
     model: nn.Module,
     loader: DataLoader,
@@ -653,7 +670,7 @@ def train_one_epoch_augmix(
         logits_aug2  = model(aug2)
 
         ce   = criterion(logits_clean, labels)
-        jsd  = jsd_loss(logits_clean, logits_aug1, logits_aug2)
+        jsd  = _jsd_loss(logits_clean, logits_aug1, logits_aug2)
         loss = ce + lambda_jsd * jsd
 
         loss.backward()
@@ -740,8 +757,28 @@ def run_augmix_training(
         transforms.Normalize(mean=data_params.mean, std=data_params.std),
     ])
 
+    # torchvision C++ AugMix — significantly faster than custom PIL implementation
+    clean_tf = transforms.Compose([pre_transform, preprocess])
+    augmix_tf = transforms.Compose([
+        pre_transform,
+        transforms.AugMix(
+            severity=augmix_severity,
+            mixture_width=augmix_width,
+            chain_depth=augmix_depth,
+        ),
+        preprocess,
+    ])
+
+    class _ThreeViewDataset(Dataset):
+        def __init__(self, ds):
+            self.ds = ds
+        def __len__(self):
+            return len(self.ds)
+        def __getitem__(self, i):
+            img, label = self.ds[i]
+            return clean_tf(img), augmix_tf(img), augmix_tf(img), label
+
     batch_size = model_training_params.device_config.batch_size
-    # base dataset with no transform → raw PIL images
     base_train_ds = datasets.CIFAR10(
         model_training_params.data_dir, train=True, download=True, transform=None,
     )
@@ -749,10 +786,7 @@ def run_augmix_training(
         model_training_params.data_dir, train=False, download=True, transform=transform_val,
     )
 
-    train_ds = AugMixDataset(
-        base_train_ds, pre_transform, preprocess,
-        severity=augmix_severity, width=augmix_width, depth=augmix_depth,
-    )
+    train_ds = _ThreeViewDataset(base_train_ds)
     train_loader = DataLoader(train_ds, batch_size=batch_size, shuffle=True,
                               num_workers=model_training_params.num_workers)
     val_loader   = DataLoader(val_ds,   batch_size=batch_size, shuffle=False,
