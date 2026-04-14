@@ -1,12 +1,6 @@
-# CS515 Homework 2 — Transfer Learning & Knowledge Distillation on CIFAR-10
+# CS515 Homework 3 — Build On HW2 Transfer Learning & Knowledge Distillation on CIFAR-10
 
 ## Overview
-
-This repository implements two deep learning techniques for CIFAR-10 classification:
-
-- **Part A — Transfer Learning:** Adapts a pretrained ResNet-18 to CIFAR-10 via two strategies (resize+freeze and modify+fine-tune).
-- **Part B — Knowledge Distillation:** Trains compact student models (SimpleCNN, MobileNetV2) guided by a ResNet-18 teacher, with and without label smoothing.
-
 ## Repository Structure
 
 ```
